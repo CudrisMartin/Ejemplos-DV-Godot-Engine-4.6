@@ -1,0 +1,181 @@
+[gd_scene load_steps=12 format=3 uid="uid://cgswqosq1xyd1"]
+
+[ext_resource type="Script" path="res://Clase 7/Areas.gd" id="1_4rou2"]
+[ext_resource type="Texture2D" uid="uid://vyhqgix3ixrb" path="res://icon.svg" id="2_nnmpj"]
+[ext_resource type="Script" path="res://Jugador.gd" id="3_7uor0"]
+[ext_resource type="Texture2D" uid="uid://owei0ip0ern4" path="res://Paquetes_de_recursos/Pixel Adventure 2/Enemies/Turtle/Hit (44x26).png" id="3_w17hr"]
+[ext_resource type="Texture2D" uid="uid://cr0qmu3k6cm6e" path="res://Paquetes_de_recursos/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/idle/player-idle-1.png" id="4_3xsrh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_e1uc7"]
+size = Vector2(128, 648)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_n3tp8"]
+size = Vector2(1280, 129)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_dnunn"]
+radius = 16.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_equfc"]
+radius = 8.0
+height = 22.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_l4654"]
+size = Vector2(100, 70)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_g82jp"]
+size = Vector2(161, 378)
+
+[node name="Areas" type="Node2D"]
+script = ExtResource("1_4rou2")
+
+[node name="Escenario" type="Node2D" parent="."]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="Escenario"]
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Escenario/StaticBody2D"]
+position = Vector2(0, 324)
+shape = SubResource("RectangleShape2D_e1uc7")
+
+[node name="Icon" type="Sprite2D" parent="Escenario/StaticBody2D"]
+position = Vector2(0, 324)
+scale = Vector2(1, 5.0625)
+texture = ExtResource("2_nnmpj")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="Escenario"]
+position = Vector2(1152, 0)
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Escenario/StaticBody2D2"]
+position = Vector2(0, 324)
+shape = SubResource("RectangleShape2D_e1uc7")
+
+[node name="Icon" type="Sprite2D" parent="Escenario/StaticBody2D2"]
+position = Vector2(0, 324)
+scale = Vector2(1, 5.0625)
+texture = ExtResource("2_nnmpj")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="Escenario"]
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Escenario/StaticBody2D3"]
+position = Vector2(576, 584.5)
+shape = SubResource("RectangleShape2D_n3tp8")
+
+[node name="Icon" type="Sprite2D" parent="Escenario/StaticBody2D3"]
+position = Vector2(576, 584)
+scale = Vector2(10, 1)
+texture = ExtResource("2_nnmpj")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+position = Vector2(992, 80)
+collision_layer = 2
+collision_mask = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+shape = SubResource("CircleShape2D_dnunn")
+
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D"]
+texture_filter = 1
+position = Vector2(0, -5)
+texture = ExtResource("3_w17hr")
+hframes = 5
+frame = 4
+
+[node name="Jugador" type="CharacterBody2D" parent="."]
+position = Vector2(232, 468)
+scale = Vector2(3, 3)
+collision_mask = 5
+script = ExtResource("3_7uor0")
+
+[node name="Sprite2D" type="Sprite2D" parent="Jugador"]
+texture_filter = 1
+texture = ExtResource("4_3xsrh")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Jugador"]
+position = Vector2(0, 5)
+shape = SubResource("CapsuleShape2D_equfc")
+
+[node name="Rojo" type="Area2D" parent="."]
+z_index = -1
+position = Vector2(136, 484)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rojo"]
+shape = SubResource("RectangleShape2D_l4654")
+
+[node name="Sprite2D" type="Sprite2D" parent="Rojo"]
+modulate = Color(1, 0, 0, 1)
+position = Vector2(-3.39746e-06, -1.81198e-05)
+scale = Vector2(0.78125, 0.546875)
+texture = ExtResource("2_nnmpj")
+
+[node name="Verde" type="Area2D" parent="."]
+z_index = -1
+position = Vector2(312, 484)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Verde"]
+shape = SubResource("RectangleShape2D_l4654")
+
+[node name="Sprite2D" type="Sprite2D" parent="Verde"]
+modulate = Color(0, 1, 0, 1)
+position = Vector2(-3.39746e-06, -1.81198e-05)
+scale = Vector2(0.78125, 0.546875)
+texture = ExtResource("2_nnmpj")
+
+[node name="Azul" type="Area2D" parent="."]
+z_index = -1
+position = Vector2(481, 484)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Azul"]
+shape = SubResource("RectangleShape2D_l4654")
+
+[node name="Sprite2D" type="Sprite2D" parent="Azul"]
+modulate = Color(0, 0, 1, 1)
+position = Vector2(-3.39746e-06, -1.81198e-05)
+scale = Vector2(0.78125, 0.546875)
+texture = ExtResource("2_nnmpj")
+
+[node name="Limpiar" type="Area2D" parent="."]
+z_index = -1
+position = Vector2(656, 484)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Limpiar"]
+shape = SubResource("RectangleShape2D_l4654")
+
+[node name="Sprite2D" type="Sprite2D" parent="Limpiar"]
+position = Vector2(-3.39746e-06, -1.81198e-05)
+scale = Vector2(0.78125, 0.546875)
+texture = ExtResource("2_nnmpj")
+
+[node name="Area_gravedad" type="Area2D" parent="."]
+position = Vector2(983, 222)
+collision_layer = 2
+collision_mask = 2
+gravity_space_override = 2
+gravity_point_center = Vector2(0, -1)
+gravity_direction = Vector2(0, -1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area_gravedad"]
+position = Vector2(0, 109)
+shape = SubResource("RectangleShape2D_g82jp")
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+position = Vector2(1088, 240)
+target_position = Vector2(-150, 0)
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = 1104.0
+offset_top = 224.0
+offset_right = 1144.0
+offset_bottom = 264.0
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_left = 960.0
+offset_top = 520.0
+offset_right = 1000.0
+offset_bottom = 560.0
+
+[connection signal="body_entered" from="Rojo" to="." method="_on_rojo_body_entered"]
+[connection signal="body_entered" from="Verde" to="." method="_on_verde_body_entered"]
+[connection signal="body_entered" from="Azul" to="." method="_on_azul_body_entered"]
+[connection signal="body_entered" from="Limpiar" to="." method="_on_limpiar_body_entered"]

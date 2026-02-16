@@ -1,0 +1,48 @@
+[gd_scene load_steps=6 format=3 uid="uid://s66kdx4v3tmt"]
+
+[ext_resource type="Script" uid="uid://hg2cf37hnsyw" path="res://Clase 2 y 3 -- Prog en GDScript - Nodos/Clase 2.gd" id="1_r01cf"]
+[ext_resource type="PackedScene" uid="uid://dn2aqn4sxj0r2" path="res://Clase 2 y 3 -- Prog en GDScript - Nodos/Carro.tscn" id="2_66vq6"]
+[ext_resource type="PackedScene" uid="uid://bwj028so425kr" path="res://Clase 2 y 3 -- Prog en GDScript - Nodos/InfoCarro.tscn" id="3_sudc2"]
+[ext_resource type="PackedScene" uid="uid://de8tcfo8va1rm" path="res://Clase 2 y 3 -- Prog en GDScript - Nodos/InterfazClase2.tscn" id="4_85sy5"]
+
+[sub_resource type="Curve2D" id="Curve2D_b4fdd"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 1024, 64, 0, 0, 0, 0, 704, 64, 0, 0, 0, 0, 704, 576, 0, 0, 0, 0, 1024, 576, 0, 0, 0, 0, 1024, 64)
+}
+point_count = 5
+
+[node name="Node" type="Node2D" node_paths=PackedStringArray("Camara", "Interfaz", "InfoCarros")]
+script = ExtResource("1_r01cf")
+InsCarro = ExtResource("2_66vq6")
+Camara = NodePath("Camera2D")
+Interfaz = NodePath("GUI/InterfazClase2")
+InfoCarros = NodePath("GUI/InfoCarro")
+metadata/_edit_vertical_guides_ = [576.0]
+metadata/_edit_horizontal_guides_ = [647.0]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+enabled = false
+zoom = Vector2(5, 5)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+autostart = true
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.364706, 0.231373, 0.258824, 1)
+
+[node name="Path2D" type="Path2D" parent="."]
+curve = SubResource("Curve2D_b4fdd")
+
+[node name="GUI" type="CanvasLayer" parent="."]
+
+[node name="InfoCarro" parent="GUI" instance=ExtResource("3_sudc2")]
+visible = false
+
+[node name="InterfazClase2" parent="GUI" instance=ExtResource("4_85sy5")]
+
+[connection signal="carro_seleccionado" from="GUI/InterfazClase2" to="." method="_on_interfaz_clase_2_carro_seleccionado"]
+[connection signal="enviar_info_carro" from="GUI/InterfazClase2" to="." method="anadir_nuevo_carro"]

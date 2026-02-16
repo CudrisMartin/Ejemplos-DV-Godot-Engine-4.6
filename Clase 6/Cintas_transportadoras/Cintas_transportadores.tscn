@@ -1,0 +1,186 @@
+[gd_scene load_steps=11 format=3 uid="uid://b057lgu3hawel"]
+
+[ext_resource type="PackedScene" uid="uid://cuxma2uf6rt5u" path="res://Clase 6/Cintas_transportadoras/Cinta.tscn" id="1_a5o3j"]
+[ext_resource type="Texture2D" uid="uid://cyjam8587qr4h" path="res://Assets Generales/Sprites/Pixel Adventure 1/Free/Background/Gray.png" id="1_ptbvl"]
+[ext_resource type="Theme" uid="uid://cae74lhnnqf7w" path="res://Recursos de Godot/Temas Clase 1.tres" id="1_vhs8n"]
+[ext_resource type="Texture2D" uid="uid://dmi608wj6mj6u" path="res://Assets Generales/Sprites/Propios/Godot plush.png" id="2_glj3f"]
+[ext_resource type="PackedScene" uid="uid://bdo53gdf76tio" path="res://Clase 6/Cintas_transportadoras/Rueda.tscn" id="3_4n52q"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bmkg6"]
+size = Vector2(1152, 64)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oqthr"]
+size = Vector2(64, 652)
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_wulj7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fioqe"]
+size = Vector2(30, 30)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_a3qcu"]
+size = Vector2(40, 512)
+
+[node name="Node2D" type="Node2D"]
+texture_filter = 1
+
+[node name="TextureRect" type="TextureRect" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = ExtResource("1_ptbvl")
+
+[node name="Cintas" type="Node2D" parent="."]
+
+[node name="Cinta" parent="Cintas" instance=ExtResource("1_a5o3j")]
+position = Vector2(256, 507)
+constant_linear_velocity = Vector2(500, 0)
+
+[node name="Cinta2" parent="Cintas" instance=ExtResource("1_a5o3j")]
+position = Vector2(736, 507)
+constant_linear_velocity = Vector2(500, 0)
+
+[node name="Cinta3" parent="Cintas" instance=ExtResource("1_a5o3j")]
+position = Vector2(1064, 392)
+rotation = 1.5708
+
+[node name="Cinta4" parent="Cintas" instance=ExtResource("1_a5o3j")]
+position = Vector2(960, 580)
+rotation = 1.5708
+scale = Vector2(0.4, 1)
+
+[node name="Cinta5" parent="Cintas" instance=ExtResource("1_a5o3j")]
+position = Vector2(960, 321)
+rotation = 1.5708
+scale = Vector2(0.4, 1)
+
+[node name="Cinta6" parent="Cintas" instance=ExtResource("1_a5o3j")]
+position = Vector2(994, 104)
+scale = Vector2(0.4, 1)
+
+[node name="Mundo" type="StaticBody2D" parent="."]
+position = Vector2(328, 688)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mundo"]
+position = Vector2(248, -8)
+shape = SubResource("RectangleShape2D_bmkg6")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="Mundo"]
+position = Vector2(248, -720)
+shape = SubResource("RectangleShape2D_bmkg6")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Mundo"]
+position = Vector2(856, -364)
+shape = SubResource("RectangleShape2D_oqthr")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="Mundo"]
+position = Vector2(-360, -366)
+shape = SubResource("RectangleShape2D_oqthr")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+texture_filter = 1
+offset_right = 576.0
+offset_bottom = 176.0
+theme = ExtResource("1_vhs8n")
+bbcode_enabled = true
+text = "En esta escena una esfera (RigidBody2D) es movida netamente por los parametros [b]constant_linear_velocity[/b] y [b]constant_angular_velocity[/b] de varios StaticBody2D, además de un [b]Area2D[/b]."
+
+[node name="GodotPlush" type="RigidBody2D" parent="."]
+position = Vector2(33, 440)
+mass = 0.5
+physics_material_override = SubResource("PhysicsMaterial_wulj7")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GodotPlush"]
+shape = SubResource("RectangleShape2D_fioqe")
+
+[node name="Sprite2D" type="Sprite2D" parent="GodotPlush"]
+position = Vector2(2.52724e-05, -8.01682e-06)
+scale = Vector2(0.04, 0.04)
+texture = ExtResource("2_glj3f")
+
+[node name="Elevador" type="Area2D" parent="."]
+position = Vector2(1012, 392)
+gravity_space_override = 2
+gravity_point_center = Vector2(0, -1)
+gravity_direction = Vector2(0, -1)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Elevador"]
+shape = SubResource("RectangleShape2D_a3qcu")
+
+[node name="Ruedas" type="Node2D" parent="."]
+
+[node name="Rueda" parent="Ruedas" instance=ExtResource("3_4n52q")]
+position = Vector2(1032, 125)
+constant_angular_velocity = -1.5708
+
+[node name="Rueda2" parent="Ruedas" instance=ExtResource("3_4n52q")]
+position = Vector2(928, 251)
+constant_angular_velocity = -12.5664
+
+[node name="Rueda3" parent="Ruedas" instance=ExtResource("3_4n52q")]
+position = Vector2(880, 251)
+constant_angular_velocity = -12.5664
+
+[node name="Rueda4" parent="Ruedas" instance=ExtResource("3_4n52q")]
+position = Vector2(832, 251)
+constant_angular_velocity = -12.5664
+
+[node name="Rueda5" parent="Ruedas" instance=ExtResource("3_4n52q")]
+position = Vector2(784, 251)
+constant_angular_velocity = -12.5664
+
+[node name="Rueda6" parent="Ruedas" instance=ExtResource("3_4n52q")]
+position = Vector2(736, 251)
+constant_angular_velocity = -12.5664
+
+[node name="Rueda7" parent="Ruedas" instance=ExtResource("3_4n52q")]
+position = Vector2(688, 251)
+constant_angular_velocity = -12.5664
+
+[node name="Rueda8" parent="Ruedas" instance=ExtResource("3_4n52q")]
+position = Vector2(640, 252)
+constant_angular_velocity = -12.5664
+
+[node name="Rueda9" parent="Ruedas" instance=ExtResource("3_4n52q")]
+position = Vector2(592, 252)
+constant_angular_velocity = -12.5664
+
+[node name="Rueda10" parent="Ruedas" instance=ExtResource("3_4n52q")]
+position = Vector2(544, 252)
+constant_angular_velocity = -12.5664
+
+[node name="Rueda11" parent="Ruedas" instance=ExtResource("3_4n52q")]
+position = Vector2(496, 252)
+constant_angular_velocity = -12.5664
+
+[node name="Rueda12" parent="Ruedas" instance=ExtResource("3_4n52q")]
+position = Vector2(448, 252)
+constant_angular_velocity = -12.5664
+
+[node name="Rueda13" parent="Ruedas" instance=ExtResource("3_4n52q")]
+position = Vector2(400, 252)
+constant_angular_velocity = -12.5664
+
+[node name="Rueda14" parent="Ruedas" instance=ExtResource("3_4n52q")]
+position = Vector2(352, 252)
+constant_angular_velocity = -12.5664
+
+[node name="Rueda15" parent="Ruedas" instance=ExtResource("3_4n52q")]
+position = Vector2(304, 252)
+constant_angular_velocity = -12.5664
+
+[node name="Rueda16" parent="Ruedas" instance=ExtResource("3_4n52q")]
+position = Vector2(256, 252)
+constant_angular_velocity = -12.5664
+
+[node name="Rueda17" parent="Ruedas" instance=ExtResource("3_4n52q")]
+position = Vector2(208, 252)
+constant_angular_velocity = -12.5664
+
+[node name="Rueda18" parent="Ruedas" instance=ExtResource("3_4n52q")]
+position = Vector2(160, 252)
+constant_angular_velocity = -12.5664
+
+[node name="Rueda19" parent="Ruedas" instance=ExtResource("3_4n52q")]
+position = Vector2(112, 252)
+constant_angular_velocity = -12.5664

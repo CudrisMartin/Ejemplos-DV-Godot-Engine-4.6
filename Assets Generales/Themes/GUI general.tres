@@ -1,0 +1,23 @@
+[gd_resource type="Theme" load_steps=2 format=3 uid="uid://bnoxaja50squm"]
+
+[ext_resource type="FontFile" uid="uid://ff38gkqcbefs" path="res://Assets Generales/Fuentes/FutilePro.ttf" id="1_6yo01"]
+
+[resource]
+Button/font_sizes/font_size = 16
+Button/fonts/font = ExtResource("1_6yo01")
+ColorPickerButton/fonts/font = ExtResource("1_6yo01")
+ItemList/font_sizes/font_size = 32
+ItemList/fonts/font = ExtResource("1_6yo01")
+Label/font_sizes/font_size = 32
+Label/fonts/font = ExtResource("1_6yo01")
+LineEdit/fonts/font = ExtResource("1_6yo01")
+MarginContainer/constants/margin_bottom = 8
+MarginContainer/constants/margin_left = 8
+MarginContainer/constants/margin_right = 8
+MarginContainer/constants/margin_top = 8
+RichTextLabel/font_sizes/bold_font_size = 32
+RichTextLabel/font_sizes/bold_italics_font_size = 32
+RichTextLabel/font_sizes/italics_font_size = 32
+RichTextLabel/font_sizes/mono_font_size = 32
+RichTextLabel/font_sizes/normal_font_size = 32
+RichTextLabel/fonts/normal_font = ExtResource("1_6yo01")

@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dn2aqn4sxj0r2"]
+
+[ext_resource type="Script" uid="uid://cj2wg4tvclfaw" path="res://Clase 2 y 3 -- Prog en GDScript - Nodos/Carro.gd" id="1_1sgdk"]
+[ext_resource type="Texture2D" uid="uid://c46rvwa7lilai" path="res://Assets Generales/Sprites/Propios/Carros.png" id="2_vug3p"]
+
+[node name="Carro" type="PathFollow2D"]
+script = ExtResource("1_1sgdk")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+rotation = 1.5708
+texture = ExtResource("2_vug3p")
+hframes = 4

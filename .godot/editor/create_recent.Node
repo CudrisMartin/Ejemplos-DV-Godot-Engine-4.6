@@ -1,0 +1,14 @@
+CharacterBody2D
+VisibleOnScreenNotifier2D
+Line2D
+Polygon2D
+AudioStreamPlayer
+StaticBody2D
+AnimatedSprite2D
+CollisionShape2D
+Sprite2D
+Node2D
+RichTextLabel
+AnimationTree
+MarginContainer
+Button

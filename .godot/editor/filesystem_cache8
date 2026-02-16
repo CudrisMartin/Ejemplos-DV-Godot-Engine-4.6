@@ -1,0 +1,733 @@
+ea4bc82a6ad023ab7ee23ee620429895
+::res://::1740074142
+export_presets.cfg::TextFile::-1::1730476344::0::1::::<><>::
+icon.svg::CompressedTexture2D::1523964702729268223::1721687013::1721687066::1::::<><>::
+node.gd::GDScript::-1::1728849565::0::1::::<>Node<>::
+README.md::TextFile::-1::1721687013::0::1::::<><>::
+ScenesManager.gd::GDScript::-1::1730475973::0::1::::<>Node<>::
+::res://Assets/::1723857596
+::res://Assets/Fuentes/::1723156337
+PressStart2P-Regular.ttf::FontFile::9201263883399788069::1723155932::1723156337::1::::<><>::
+::res://Assets/Sprites/::1723857596
+::res://Assets/Sprites/Adventurer/::1723156338
+adventurer-Sheet.png::CompressedTexture2D::8173428676416391531::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Adventurer/Individual Sprites/::1723156339
+adventurer-attack1-00.png::CompressedTexture2D::6237196213514846802::1723155932::1723156339::1::::<><>::
+adventurer-attack1-01.png::CompressedTexture2D::8695698709418503582::1723155932::1723156339::1::::<><>::
+adventurer-attack1-02.png::CompressedTexture2D::5943627544831496590::1723155932::1723156339::1::::<><>::
+adventurer-attack1-03.png::CompressedTexture2D::5501401127748233568::1723155932::1723156339::1::::<><>::
+adventurer-attack1-04.png::CompressedTexture2D::1586547876397932163::1723155932::1723156339::1::::<><>::
+adventurer-attack2-00.png::CompressedTexture2D::8228143091105301530::1723155932::1723156339::1::::<><>::
+adventurer-attack2-01.png::CompressedTexture2D::7062589832966852296::1723155932::1723156339::1::::<><>::
+adventurer-attack2-02.png::CompressedTexture2D::3923276485462713104::1723155932::1723156339::1::::<><>::
+adventurer-attack2-03.png::CompressedTexture2D::1548656620613978523::1723155932::1723156339::1::::<><>::
+adventurer-attack2-04.png::CompressedTexture2D::5289186801453932567::1723155932::1723156339::1::::<><>::
+adventurer-attack2-05.png::CompressedTexture2D::5008145573604344376::1723155932::1723156339::1::::<><>::
+adventurer-attack3-00.png::CompressedTexture2D::7681773096969670101::1723155932::1723156339::1::::<><>::
+adventurer-attack3-01.png::CompressedTexture2D::5201143639708533298::1723155932::1723156339::1::::<><>::
+adventurer-attack3-02.png::CompressedTexture2D::3755625777793754003::1723155932::1723156339::1::::<><>::
+adventurer-attack3-03.png::CompressedTexture2D::2514444031675721484::1723155932::1723156339::1::::<><>::
+adventurer-attack3-04.png::CompressedTexture2D::1611852863140158280::1723155932::1723156339::1::::<><>::
+adventurer-attack3-05.png::CompressedTexture2D::1023767273859408891::1723155932::1723156339::1::::<><>::
+adventurer-crnr-clmb-00.png::CompressedTexture2D::5152405334656241593::1723155932::1723156339::1::::<><>::
+adventurer-crnr-clmb-01.png::CompressedTexture2D::7751014826995410197::1723155932::1723156339::1::::<><>::
+adventurer-crnr-clmb-02.png::CompressedTexture2D::8517323015160256805::1723155932::1723156339::1::::<><>::
+adventurer-crnr-clmb-03.png::CompressedTexture2D::7404607082661087360::1723155932::1723156339::1::::<><>::
+adventurer-crnr-clmb-04.png::CompressedTexture2D::8917295898240603208::1723155932::1723156338::1::::<><>::
+adventurer-crnr-grb-00.png::CompressedTexture2D::1300844240776852238::1723155932::1723156338::1::::<><>::
+adventurer-crnr-grb-01.png::CompressedTexture2D::8741240191137437759::1723155932::1723156338::1::::<><>::
+adventurer-crnr-grb-02.png::CompressedTexture2D::6437761029200343907::1723155932::1723156338::1::::<><>::
+adventurer-crnr-grb-03.png::CompressedTexture2D::5248070253137127913::1723155932::1723156338::1::::<><>::
+adventurer-crnr-jmp-00.png::CompressedTexture2D::6122737503408090718::1723155932::1723156338::1::::<><>::
+adventurer-crnr-jmp-01.png::CompressedTexture2D::8729811836973390502::1723155932::1723156338::1::::<><>::
+adventurer-crnr-jmp-02.png::CompressedTexture2D::2870325559194858689::1723155932::1723156338::1::::<><>::
+adventurer-crouch-00.png::CompressedTexture2D::237640045652930962::1723155932::1723156338::1::::<><>::
+adventurer-crouch-01.png::CompressedTexture2D::8857556688243193177::1723155932::1723156338::1::::<><>::
+adventurer-crouch-02.png::CompressedTexture2D::1191845384259841593::1723155932::1723156339::1::::<><>::
+adventurer-crouch-03.png::CompressedTexture2D::7743293928658408435::1723155932::1723156339::1::::<><>::
+adventurer-die-00.png::CompressedTexture2D::8245895062038044276::1723155932::1723156339::1::::<><>::
+adventurer-die-01.png::CompressedTexture2D::6777654913006600030::1723155932::1723156339::1::::<><>::
+adventurer-die-02.png::CompressedTexture2D::6106785024508363078::1723155932::1723156339::1::::<><>::
+adventurer-die-03.png::CompressedTexture2D::1594244252432454025::1723155932::1723156339::1::::<><>::
+adventurer-die-04.png::CompressedTexture2D::5793660134543171287::1723155932::1723156339::1::::<><>::
+adventurer-die-05.png::CompressedTexture2D::8815374647221336690::1723155932::1723156339::1::::<><>::
+adventurer-die-06.png::CompressedTexture2D::8612008630131452273::1723155932::1723156339::1::::<><>::
+adventurer-fall-00.png::CompressedTexture2D::8527526780474940696::1723155932::1723156339::1::::<><>::
+adventurer-fall-01.png::CompressedTexture2D::3389691963932321713::1723155932::1723156339::1::::<><>::
+adventurer-hurt-00.png::CompressedTexture2D::6920265243556325692::1723155932::1723156339::1::::<><>::
+adventurer-hurt-01.png::CompressedTexture2D::1329229550705165399::1723155932::1723156339::1::::<><>::
+adventurer-hurt-02.png::CompressedTexture2D::5824831689346754727::1723155932::1723156339::1::::<><>::
+adventurer-idle-00.png::CompressedTexture2D::5146398072859912424::1723155932::1723156339::1::::<><>::
+adventurer-idle-01.png::CompressedTexture2D::6650718038548013866::1723155932::1723156339::1::::<><>::
+adventurer-idle-2-00.png::CompressedTexture2D::4864251350917493942::1723155932::1723156339::1::::<><>::
+adventurer-idle-2-01.png::CompressedTexture2D::8279423451842566426::1723155932::1723156339::1::::<><>::
+adventurer-idle-2-02.png::CompressedTexture2D::6953650545326097927::1723155932::1723156339::1::::<><>::
+adventurer-idle-2-03.png::CompressedTexture2D::1228264248477847434::1723155932::1723156339::1::::<><>::
+adventurer-idle-02.png::CompressedTexture2D::4018649947851309943::1723155932::1723156339::1::::<><>::
+adventurer-idle-03.png::CompressedTexture2D::8968488830927111657::1723155932::1723156339::1::::<><>::
+adventurer-jump-00.png::CompressedTexture2D::7621698010783370065::1723155932::1723156339::1::::<><>::
+adventurer-jump-01.png::CompressedTexture2D::19684578573145829::1723155932::1723156339::1::::<><>::
+adventurer-jump-02.png::CompressedTexture2D::7410668315783776972::1723155932::1723156339::1::::<><>::
+adventurer-jump-03.png::CompressedTexture2D::6423318611838136860::1723155932::1723156339::1::::<><>::
+adventurer-run-00.png::CompressedTexture2D::2914942610023111533::1723155932::1723156339::1::::<><>::
+adventurer-run-01.png::CompressedTexture2D::4370683121427477609::1723155932::1723156339::1::::<><>::
+adventurer-run-02.png::CompressedTexture2D::4462605346714495440::1723155932::1723156339::1::::<><>::
+adventurer-run-03.png::CompressedTexture2D::8204111290942199996::1723155932::1723156339::1::::<><>::
+adventurer-run-04.png::CompressedTexture2D::3084515365417081887::1723155932::1723156339::1::::<><>::
+adventurer-run-05.png::CompressedTexture2D::2485393360639624907::1723155932::1723156338::1::::<><>::
+adventurer-slide-00.png::CompressedTexture2D::6924135640072766301::1723155932::1723156338::1::::<><>::
+adventurer-slide-01.png::CompressedTexture2D::2701607798349907029::1723155932::1723156338::1::::<><>::
+adventurer-smrslt-00.png::CompressedTexture2D::8706679002111123362::1723155932::1723156338::1::::<><>::
+adventurer-smrslt-01.png::CompressedTexture2D::7827353174560069695::1723155932::1723156338::1::::<><>::
+adventurer-smrslt-02.png::CompressedTexture2D::6106582222882616688::1723155932::1723156338::1::::<><>::
+adventurer-smrslt-03.png::CompressedTexture2D::7095050260002472707::1723155932::1723156338::1::::<><>::
+adventurer-stand-00.png::CompressedTexture2D::2052888020792162154::1723155932::1723156338::1::::<><>::
+adventurer-stand-01.png::CompressedTexture2D::8337747450443596719::1723155932::1723156338::1::::<><>::
+adventurer-stand-02.png::CompressedTexture2D::6815671635312238614::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/mystic_woods_free_2.1/::1723155932
+read_me.txt::TextFile::-1::1723155932::0::1::::<><>::
+::res://Assets/Sprites/mystic_woods_free_2.1/sprites/::1723155932
+::res://Assets/Sprites/mystic_woods_free_2.1/sprites/characters/::1723156338
+player.png::CompressedTexture2D::6560173656476578182::1723155932::1723156338::1::::<><>::
+skeleton.png::CompressedTexture2D::8555501324574242736::1723155932::1723156338::1::::<><>::
+slime.png::CompressedTexture2D::4178799263114368880::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/mystic_woods_free_2.1/sprites/objects/::1723156338
+chest_01.png::CompressedTexture2D::3172574954678035743::1723155932::1723156338::1::::<><>::
+chest_02.png::CompressedTexture2D::9024324216993823811::1723155932::1723156338::1::::<><>::
+objects.png::CompressedTexture2D::6358512077320728845::1723155932::1723156338::1::::<><>::
+rock_in_water_01-sheet.png::CompressedTexture2D::1267325206297131178::1723155932::1723156338::1::::<><>::
+rock_in_water_01.png::CompressedTexture2D::9154334317766416426::1723155932::1723156338::1::::<><>::
+rock_in_water_02.png::CompressedTexture2D::3758161569850332259::1723155932::1723156338::1::::<><>::
+rock_in_water_03.png::CompressedTexture2D::1393348513681233628::1723155932::1723156338::1::::<><>::
+rock_in_water_04.png::CompressedTexture2D::2378851484189266942::1723155932::1723156338::1::::<><>::
+rock_in_water_05.png::CompressedTexture2D::180978716254996094::1723155932::1723156338::1::::<><>::
+rock_in_water_06.png::CompressedTexture2D::5856057748812574105::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/mystic_woods_free_2.1/sprites/particles/::1723156338
+dust_particles_01.png::CompressedTexture2D::5563196359898219463::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/::1723156338
+decor_8x8.png::CompressedTexture2D::3434893377929739856::1723155932::1723156338::1::::<><>::
+decor_16x16.png::CompressedTexture2D::8778408029921581410::1723155932::1723156338::1::::<><>::
+fences.png::CompressedTexture2D::6162826041160426456::1723155932::1723156338::1::::<><>::
+grass.png::CompressedTexture2D::4748448523595568888::1723155932::1723156338::1::::<><>::
+plains.png::CompressedTexture2D::8644124705809500709::1723155932::1723156338::1::::<><>::
+water1.png::CompressedTexture2D::8420861002532826986::1723155932::1723156338::1::::<><>::
+water2.png::CompressedTexture2D::2301663860896300897::1723155932::1723156338::1::::<><>::
+water3.png::CompressedTexture2D::5019863054394178914::1723155932::1723156338::1::::<><>::
+water4.png::CompressedTexture2D::3651346810415821395::1723155932::1723156338::1::::<><>::
+water5.png::CompressedTexture2D::7493042785546547851::1723155932::1723156338::1::::<><>::
+water6.png::CompressedTexture2D::6613799167081102042::1723155932::1723156338::1::::<><>::
+water_decorations.png::CompressedTexture2D::3719203421679812517::1723155932::1723156338::1::::<><>::
+water_lillies.png::CompressedTexture2D::3657290909609302722::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/floors/::1723156338
+carpet.png::CompressedTexture2D::4225327116296986785::1723155932::1723156338::1::::<><>::
+flooring.png::CompressedTexture2D::451977500417135141::1723155932::1723156338::1::::<><>::
+wooden.png::CompressedTexture2D::6413464616934023515::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/mystic_woods_free_2.1/sprites/tilesets/walls/::1723156338
+walls.png::CompressedTexture2D::8698953261953375467::1723155932::1723156338::1::::<><>::
+wooden_door.png::CompressedTexture2D::2762589085351023992::1723155932::1723156338::1::::<><>::
+wooden_door_b.png::CompressedTexture2D::8459984843226603642::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 1/::1723155932
+::res://Assets/Sprites/Pixel Adventure 1/Free/::1723156338
+20 Enemies.png::CompressedTexture2D::3581031989785440417::1723155932::1723156338::1::::<><>::
+Hello.png::CompressedTexture2D::4957872948875114794::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 1/Free/Background/::1723156338
+Blue.png::CompressedTexture2D::7785109528409983620::1723155932::1723156338::1::::<><>::
+Brown.png::CompressedTexture2D::879022629730127203::1723155932::1723156338::1::::<><>::
+Gray.png::CompressedTexture2D::6475976225169844549::1723155932::1723156338::1::::<><>::
+Green.png::CompressedTexture2D::811511777890039261::1723155932::1723156338::1::::<><>::
+Pink.png::CompressedTexture2D::4883847459095002202::1723155932::1723156338::1::::<><>::
+Purple.png::CompressedTexture2D::8803801430481065622::1723155932::1723156338::1::::<><>::
+Yellow.png::CompressedTexture2D::3263280700943002187::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 1/Free/Items/::1723155932
+::res://Assets/Sprites/Pixel Adventure 1/Free/Items/Boxes/::1723155932
+::res://Assets/Sprites/Pixel Adventure 1/Free/Items/Boxes/Box1/::1723156338
+Break.png::CompressedTexture2D::3151916514784921292::1723155932::1723156338::1::::<><>::
+Hit (28x24).png::CompressedTexture2D::8538491840953393965::1723155932::1723156338::1::::<><>::
+Idle.png::CompressedTexture2D::1119751690053403175::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 1/Free/Items/Boxes/Box2/::1723156338
+Break.png::CompressedTexture2D::4898297415490643126::1723155932::1723156338::1::::<><>::
+Hit (28x24).png::CompressedTexture2D::1381055567473637617::1723155932::1723156338::1::::<><>::
+Idle.png::CompressedTexture2D::2194332862136856712::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 1/Free/Items/Boxes/Box3/::1723156338
+Break.png::CompressedTexture2D::7847104113710459844::1723155932::1723156338::1::::<><>::
+Hit (28x24).png::CompressedTexture2D::5114946197235256221::1723155932::1723156338::1::::<><>::
+Idle.png::CompressedTexture2D::1882716223929811888::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 1/Free/Items/Checkpoints/::1723155932
+::res://Assets/Sprites/Pixel Adventure 1/Free/Items/Checkpoints/Checkpoint/::1723156339
+Checkpoint (Flag Idle)(64x64).png::CompressedTexture2D::9122159606021555963::1723155932::1723156338::1::::<><>::
+Checkpoint (Flag Out) (64x64).png::CompressedTexture2D::7494672526401391204::1723155932::1723156338::1::::<><>::
+Checkpoint (No Flag).png::CompressedTexture2D::2217108470615210207::1723155932::1723156339::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 1/Free/Items/Checkpoints/End/::1723156339
+End (Idle).png::CompressedTexture2D::7888242659323725644::1723155932::1723156339::1::::<><>::
+End (Pressed) (64x64).png::CompressedTexture2D::1763492403323807958::1723155932::1723156339::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 1/Free/Items/Checkpoints/Start/::1723156339
+Start (Idle).png::CompressedTexture2D::6523362219662570772::1723155932::1723156339::1::::<><>::
+Start (Moving) (64x64).png::CompressedTexture2D::6426524221644603250::1723155932::1723156339::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 1/Free/Items/Fruits/::1723156339
+Apple.png::CompressedTexture2D::5030841403302603449::1723155932::1723156339::1::::<><>::
+Bananas.png::CompressedTexture2D::1264791262513517030::1723155932::1723156339::1::::<><>::
+Cherries.png::CompressedTexture2D::5762534090429088076::1723155932::1723156339::1::::<><>::
+Collected.png::CompressedTexture2D::7332059940265874206::1723155932::1723156339::1::::<><>::
+Kiwi.png::CompressedTexture2D::2968039334811673699::1723155932::1723156339::1::::<><>::
+Melon.png::CompressedTexture2D::5284702865418071934::1723155932::1723156339::1::::<><>::
+Orange.png::CompressedTexture2D::9086957056430192007::1723155932::1723156339::1::::<><>::
+Pineapple.png::CompressedTexture2D::2397831010395308253::1723155932::1723156339::1::::<><>::
+Strawberry.png::CompressedTexture2D::8139553409941005532::1723155932::1723156339::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 1/Free/Main Characters/::1723156339
+Appearing (96x96).png::CompressedTexture2D::754856920754113335::1723155932::1723156339::1::::<><>::
+Desappearing (96x96).png::CompressedTexture2D::591904881459450403::1723155932::1723156339::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 1/Free/Main Characters/Mask Dude/::1723156339
+Double Jump (32x32).png::CompressedTexture2D::434392792733137750::1723155932::1723156339::1::::<><>::
+Fall (32x32).png::CompressedTexture2D::7835082202112407362::1723155932::1723156339::1::::<><>::
+Hit (32x32).png::CompressedTexture2D::2953783340012466708::1723155932::1723156339::1::::<><>::
+Idle (32x32).png::CompressedTexture2D::5975611142359098882::1723155932::1723156339::1::::<><>::
+Jump (32x32).png::CompressedTexture2D::1069062472949026442::1723155932::1723156339::1::::<><>::
+Run (32x32).png::CompressedTexture2D::4468096378798005069::1723155932::1723156339::1::::<><>::
+Wall Jump (32x32).png::CompressedTexture2D::3290512062519331666::1723155932::1723156339::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 1/Free/Main Characters/Ninja Frog/::1723156339
+Double Jump (32x32).png::CompressedTexture2D::5662732102940244111::1723155932::1723156339::1::::<><>::
+Fall (32x32).png::CompressedTexture2D::479602594042635750::1723155932::1723156339::1::::<><>::
+Hit (32x32).png::CompressedTexture2D::8859183227194122876::1723155932::1723156339::1::::<><>::
+Idle (32x32).png::CompressedTexture2D::8287441382036308554::1723155932::1723156339::1::::<><>::
+Jump (32x32).png::CompressedTexture2D::4612344813915880671::1723155932::1723156339::1::::<><>::
+Run (32x32).png::CompressedTexture2D::542436445018198674::1723155932::1723156339::1::::<><>::
+Wall Jump (32x32).png::CompressedTexture2D::2970093227771324798::1723155932::1723156339::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 1/Free/Main Characters/Pink Man/::1723156339
+Double Jump (32x32).png::CompressedTexture2D::8012651663010728778::1723155932::1723156339::1::::<><>::
+Fall (32x32).png::CompressedTexture2D::4397389230687212126::1723155932::1723156339::1::::<><>::
+Hit (32x32).png::CompressedTexture2D::2065656640970849251::1723155932::1723156339::1::::<><>::
+Idle (32x32).png::CompressedTexture2D::5131191041695932685::1723155932::1723156339::1::::<><>::
+Jump (32x32).png::CompressedTexture2D::2203678098925860012::1723155932::1723156339::1::::<><>::
+Run (32x32).png::CompressedTexture2D::6785264625051641280::1723155932::1723156339::1::::<><>::
+Wall Jump (32x32).png::CompressedTexture2D::1875505537895484::1723155932::1723156339::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 1/Free/Main Characters/Virtual Guy/::1723156339
+Double Jump (32x32).png::CompressedTexture2D::1617186629144985784::1723155932::1723156339::1::::<><>::
+Fall (32x32).png::CompressedTexture2D::5428882103832239058::1723155932::1723156339::1::::<><>::
+Hit (32x32).png::CompressedTexture2D::5407186200776206278::1723155932::1723156339::1::::<><>::
+Idle (32x32).png::CompressedTexture2D::6031155242443201130::1723155932::1723156339::1::::<><>::
+Jump (32x32).png::CompressedTexture2D::7875807146143537809::1723155932::1723156339::1::::<><>::
+Run (32x32).png::CompressedTexture2D::3123204282605372437::1723155932::1723156339::1::::<><>::
+Wall Jump (32x32).png::CompressedTexture2D::2343846427201636471::1723155932::1723156339::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 1/Free/Menu/::1723155932
+::res://Assets/Sprites/Pixel Adventure 1/Free/Menu/Buttons/::1723156339
+Achievements.png::CompressedTexture2D::3687963112157219524::1723155932::1723156339::1::::<><>::
+Back.png::CompressedTexture2D::3430087422864233063::1723155932::1723156339::1::::<><>::
+Close.png::CompressedTexture2D::961929153388541910::1723155932::1723156339::1::::<><>::
+Leaderboard.png::CompressedTexture2D::8254482530181213017::1723155932::1723156339::1::::<><>::
+Levels.png::CompressedTexture2D::446691750265714638::1723155932::1723156339::1::::<><>::
+Next.png::CompressedTexture2D::103527771254458083::1723155932::1723156339::1::::<><>::
+Play.png::CompressedTexture2D::6666207629983276350::1723155932::1723156339::1::::<><>::
+Previous.png::CompressedTexture2D::5428046397534721362::1723155932::1723156339::1::::<><>::
+Restart.png::CompressedTexture2D::3861592456566425721::1723155932::1723156339::1::::<><>::
+Settings.png::CompressedTexture2D::7848988204077697661::1723155932::1723156339::1::::<><>::
+Volume.png::CompressedTexture2D::62415936411033480::1723155932::1723156339::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 1/Free/Menu/Levels/::1723156339
+01.png::CompressedTexture2D::899971115428841211::1723155932::1723156339::1::::<><>::
+02.png::CompressedTexture2D::1715259190859346746::1723155932::1723156339::1::::<><>::
+03.png::CompressedTexture2D::332864968679350100::1723155932::1723156339::1::::<><>::
+04.png::CompressedTexture2D::389386329580300795::1723155932::1723156339::1::::<><>::
+05.png::CompressedTexture2D::9150072163855572887::1723155932::1723156339::1::::<><>::
+06.png::CompressedTexture2D::8515933363765462410::1723155932::1723156339::1::::<><>::
+07.png::CompressedTexture2D::8783142147069936788::1723155932::1723156339::1::::<><>::
+08.png::CompressedTexture2D::8808199536967387648::1723155932::1723156339::1::::<><>::
+09.png::CompressedTexture2D::270302268665907760::1723155932::1723156339::1::::<><>::
+10.png::CompressedTexture2D::4868795331129217309::1723155932::1723156339::1::::<><>::
+11.png::CompressedTexture2D::8318591280498849333::1723155932::1723156339::1::::<><>::
+12.png::CompressedTexture2D::6390265048200607379::1723155932::1723156339::1::::<><>::
+13.png::CompressedTexture2D::7400979242241414258::1723155932::1723156339::1::::<><>::
+14.png::CompressedTexture2D::5786494229988326724::1723155932::1723156339::1::::<><>::
+15.png::CompressedTexture2D::2216323088712105659::1723155932::1723156339::1::::<><>::
+16.png::CompressedTexture2D::3913442458487122995::1723155932::1723156339::1::::<><>::
+17.png::CompressedTexture2D::4624472479750573008::1723155932::1723156339::1::::<><>::
+18.png::CompressedTexture2D::5901016686628867673::1723155932::1723156339::1::::<><>::
+19.png::CompressedTexture2D::6237367716615152233::1723155932::1723156339::1::::<><>::
+20.png::CompressedTexture2D::631608990364857927::1723155932::1723156339::1::::<><>::
+21.png::CompressedTexture2D::2057944346936768674::1723155932::1723156339::1::::<><>::
+22.png::CompressedTexture2D::1134026978987915607::1723155932::1723156339::1::::<><>::
+23.png::CompressedTexture2D::6866068449964495833::1723155932::1723156339::1::::<><>::
+24.png::CompressedTexture2D::403287550566955447::1723155932::1723156339::1::::<><>::
+25.png::CompressedTexture2D::317350648531850884::1723155932::1723156339::1::::<><>::
+26.png::CompressedTexture2D::3479969056661878485::1723155932::1723156339::1::::<><>::
+27.png::CompressedTexture2D::7466596109285289907::1723155932::1723156339::1::::<><>::
+28.png::CompressedTexture2D::6109174212272916531::1723155932::1723156339::1::::<><>::
+29.png::CompressedTexture2D::992397834294358047::1723155932::1723156339::1::::<><>::
+30.png::CompressedTexture2D::4610165863393370284::1723155932::1723156339::1::::<><>::
+31.png::CompressedTexture2D::8240790361909989178::1723155932::1723156339::1::::<><>::
+32.png::CompressedTexture2D::3498117018201676321::1723155932::1723156339::1::::<><>::
+33.png::CompressedTexture2D::3489846088330374948::1723155932::1723156339::1::::<><>::
+34.png::CompressedTexture2D::2322470562865117468::1723155932::1723156339::1::::<><>::
+35.png::CompressedTexture2D::4443110393570521081::1723155932::1723156339::1::::<><>::
+36.png::CompressedTexture2D::174423197599649632::1723155932::1723156339::1::::<><>::
+37.png::CompressedTexture2D::1021177689843857842::1723155932::1723156339::1::::<><>::
+38.png::CompressedTexture2D::8956197043085044249::1723155932::1723156339::1::::<><>::
+39.png::CompressedTexture2D::2991791673149592514::1723155932::1723156339::1::::<><>::
+40.png::CompressedTexture2D::8750866307643535530::1723155932::1723156339::1::::<><>::
+41.png::CompressedTexture2D::4293857564228638047::1723155932::1723156339::1::::<><>::
+42.png::CompressedTexture2D::2056104520580470750::1723155932::1723156339::1::::<><>::
+43.png::CompressedTexture2D::8157248877850840871::1723155932::1723156339::1::::<><>::
+44.png::CompressedTexture2D::6014747352754451327::1723155932::1723156339::1::::<><>::
+45.png::CompressedTexture2D::9075204300077198767::1723155932::1723156339::1::::<><>::
+46.png::CompressedTexture2D::7501612267627780499::1723155932::1723156339::1::::<><>::
+47.png::CompressedTexture2D::1067305811796113587::1723155932::1723156339::1::::<><>::
+48.png::CompressedTexture2D::7064253714122428855::1723155932::1723156339::1::::<><>::
+49.png::CompressedTexture2D::6143498795008901321::1723155932::1723156339::1::::<><>::
+50.png::CompressedTexture2D::3192860203233623914::1723155932::1723156339::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 1/Free/Menu/Text/::1723156339
+Text (Black) (8x10).png::CompressedTexture2D::5567506663937812092::1723155932::1723156339::1::::<><>::
+Text (White) (8x10).png::CompressedTexture2D::7660117225052650067::1723155932::1723156339::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 1/Free/Other/::1723156339
+Confetti (16x16).png::CompressedTexture2D::408439136662391031::1723155932::1723156339::1::::<><>::
+Dust Particle.png::CompressedTexture2D::8322684491159298034::1723155932::1723156339::1::::<><>::
+Shadow.png::CompressedTexture2D::1183803831882273076::1723155932::1723156339::1::::<><>::
+Transition.png::CompressedTexture2D::7891024532080358620::1723155932::1723156339::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 1/Free/Terrain/::1723156339
+Terrain (16x16).png::CompressedTexture2D::6926960074076649028::1723155932::1723156339::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 1/Free/Traps/::1723155932
+::res://Assets/Sprites/Pixel Adventure 1/Free/Traps/Arrow/::1723156339
+Hit (18x18).png::CompressedTexture2D::2653192101272473349::1723155932::1723156339::1::::<><>::
+Idle (18x18).png::CompressedTexture2D::8163923386743727850::1723155932::1723156339::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 1/Free/Traps/Blocks/::1723156339
+HitSide (22x22).png::CompressedTexture2D::2327817186570323279::1723155932::1723156339::1::::<><>::
+HitTop (22x22).png::CompressedTexture2D::33465580805231595::1723155932::1723156339::1::::<><>::
+Idle.png::CompressedTexture2D::379660082034405920::1723155932::1723156339::1::::<><>::
+Part 1 (22x22).png::CompressedTexture2D::6918111906489290470::1723155932::1723156339::1::::<><>::
+Part 2 (22x22).png::CompressedTexture2D::7806409624125678210::1723155932::1723156339::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 1/Free/Traps/Falling Platforms/::1723156339
+Off.png::CompressedTexture2D::3497958390567328135::1723155932::1723156339::1::::<><>::
+On (32x10).png::CompressedTexture2D::3311505775144058489::1723155932::1723156339::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 1/Free/Traps/Fan/::1723156339
+Off.png::CompressedTexture2D::4245581240860394185::1723155932::1723156339::1::::<><>::
+On (24x8).png::CompressedTexture2D::7800159198912757466::1723155932::1723156339::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 1/Free/Traps/Fire/::1723156339
+Hit (16x32).png::CompressedTexture2D::3939908087416671846::1723155932::1723156339::1::::<><>::
+Off.png::CompressedTexture2D::736604931708536683::1723155932::1723156339::1::::<><>::
+On (16x32).png::CompressedTexture2D::4915048916439204894::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 1/Free/Traps/Platforms/::1723156338
+Brown Off.png::CompressedTexture2D::7539118070167168710::1723155932::1723156338::1::::<><>::
+Brown On (32x8).png::CompressedTexture2D::1926150104661996970::1723155932::1723156338::1::::<><>::
+Chain.png::CompressedTexture2D::5572349386275432346::1723155932::1723156338::1::::<><>::
+Grey Off.png::CompressedTexture2D::7978812428540530769::1723155932::1723156338::1::::<><>::
+Grey On (32x8).png::CompressedTexture2D::6100792073351679075::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 1/Free/Traps/Rock Head/::1723156338
+Blink (42x42).png::CompressedTexture2D::4062620847003001677::1723155932::1723156338::1::::<><>::
+Bottom Hit (42x42).png::CompressedTexture2D::4911435706426999568::1723155932::1723156338::1::::<><>::
+Idle.png::CompressedTexture2D::6201709163108879085::1723155932::1723156338::1::::<><>::
+Left Hit (42x42).png::CompressedTexture2D::3612999974543625481::1723155932::1723156338::1::::<><>::
+Right Hit (42x42).png::CompressedTexture2D::8801962788777033923::1723155932::1723156338::1::::<><>::
+Top Hit (42x42).png::CompressedTexture2D::4141373451418837079::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 1/Free/Traps/Sand Mud Ice/::1723156338
+Ice Particle.png::CompressedTexture2D::7809580749957467431::1723155932::1723156338::1::::<><>::
+Mud Particle.png::CompressedTexture2D::3468892039518191377::1723155932::1723156338::1::::<><>::
+Sand Mud Ice (16x6).png::CompressedTexture2D::1000332569205209337::1723155932::1723156338::1::::<><>::
+Sand Particle.png::CompressedTexture2D::7569429979174734280::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 1/Free/Traps/Saw/::1723156338
+Chain.png::CompressedTexture2D::586672592409663946::1723155932::1723156338::1::::<><>::
+Off.png::CompressedTexture2D::1324004132272798368::1723155932::1723156338::1::::<><>::
+On (38x38).png::CompressedTexture2D::8101843984945389695::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 1/Free/Traps/Spike Head/::1723156338
+Blink (54x52).png::CompressedTexture2D::3124369527201721318::1723155932::1723156338::1::::<><>::
+Bottom Hit (54x52).png::CompressedTexture2D::2218871279936202957::1723155932::1723156338::1::::<><>::
+Idle.png::CompressedTexture2D::991416792191994345::1723155932::1723156338::1::::<><>::
+Left Hit (54x52).png::CompressedTexture2D::5749384272904856065::1723155932::1723156338::1::::<><>::
+Right Hit (54x52).png::CompressedTexture2D::3228745349990951242::1723155932::1723156338::1::::<><>::
+Top Hit (54x52).png::CompressedTexture2D::1721334720973514434::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 1/Free/Traps/Spiked Ball/::1723156338
+Chain.png::CompressedTexture2D::1630758830063946003::1723155932::1723156338::1::::<><>::
+Spiked Ball.png::CompressedTexture2D::5468836021604522695::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 1/Free/Traps/Spikes/::1723156338
+Idle.png::CompressedTexture2D::1317502681545094005::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 1/Free/Traps/Trampoline/::1723156338
+Idle.png::CompressedTexture2D::8153117644755058759::1723155932::1723156338::1::::<><>::
+Jump (28x28).png::CompressedTexture2D::5154106619398497306::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 2/::1723156338
+Hello.png::CompressedTexture2D::7546854523604738905::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 2/Enemies/::1723155932
+::res://Assets/Sprites/Pixel Adventure 2/Enemies/AngryPig/::1723156338
+Hit 1 (36x30).png::CompressedTexture2D::4254767044449929795::1723155932::1723156338::1::::<><>::
+Hit 2 (36x30).png::CompressedTexture2D::6770809135960632950::1723155932::1723156338::1::::<><>::
+Idle (36x30).png::CompressedTexture2D::2645701266678040405::1723155932::1723156338::1::::<><>::
+Run (36x30).png::CompressedTexture2D::7490440447757211177::1723155932::1723156338::1::::<><>::
+Walk (36x30).png::CompressedTexture2D::2391399754087032715::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 2/Enemies/Bat/::1723156338
+Ceiling In (46x30).png::CompressedTexture2D::6321299480337446285::1723155932::1723156338::1::::<><>::
+Ceiling Out (46x30).png::CompressedTexture2D::830473244149879140::1723155932::1723156338::1::::<><>::
+Flying (46x30).png::CompressedTexture2D::6987473998297912188::1723155932::1723156338::1::::<><>::
+Hit (46x30).png::CompressedTexture2D::7438971321888729790::1723155932::1723156338::1::::<><>::
+Idle (46x30).png::CompressedTexture2D::5286886130470839369::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 2/Enemies/Bee/::1723156338
+Attack (36x34).png::CompressedTexture2D::5194724103227606097::1723155932::1723156338::1::::<><>::
+Bullet Pieces.png::CompressedTexture2D::8032119959292539480::1723155932::1723156338::1::::<><>::
+Bullet.png::CompressedTexture2D::7608052518829259277::1723155932::1723156338::1::::<><>::
+Hit (36x34).png::CompressedTexture2D::7527782721753919421::1723155932::1723156338::1::::<><>::
+Idle (36x34).png::CompressedTexture2D::7432537121776691347::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 2/Enemies/BlueBird/::1723156338
+Flying (32x32).png::CompressedTexture2D::2942811646826206217::1723155932::1723156338::1::::<><>::
+Hit (32x32).png::CompressedTexture2D::9140653590656536672::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 2/Enemies/Bunny/::1723156338
+Fall.png::CompressedTexture2D::9202858484355864955::1723155932::1723156338::1::::<><>::
+Hit (34x44).png::CompressedTexture2D::4686013396098102400::1723155932::1723156338::1::::<><>::
+Idle (34x44).png::CompressedTexture2D::4041289483658458264::1723155932::1723156338::1::::<><>::
+Jump.png::CompressedTexture2D::6318637997646589377::1723155932::1723156338::1::::<><>::
+Run (34x44).png::CompressedTexture2D::924290214310724021::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 2/Enemies/Chameleon/::1723156338
+Attack (84x38).png::CompressedTexture2D::1399731635652837185::1723155932::1723156338::1::::<><>::
+Hit (84x38).png::CompressedTexture2D::5699338542590247167::1723155932::1723156338::1::::<><>::
+Idle (84x38).png::CompressedTexture2D::7319798651921840033::1723155932::1723156338::1::::<><>::
+Run (84x38).png::CompressedTexture2D::4288652054659200829::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 2/Enemies/Chicken/::1723156338
+Hit (32x34).png::CompressedTexture2D::1832273203114683807::1723155932::1723156338::1::::<><>::
+Idle (32x34).png::CompressedTexture2D::2219759851553487291::1723155932::1723156338::1::::<><>::
+Run (32x34).png::CompressedTexture2D::396948131503194588::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 2/Enemies/Duck/::1723156338
+Fall (36x36).png::CompressedTexture2D::474678468967138654::1723155932::1723156338::1::::<><>::
+Hit (36x36).png::CompressedTexture2D::714199138371045949::1723155932::1723156337::1::::<><>::
+Idle (36x36).png::CompressedTexture2D::2451248463175194289::1723155932::1723156337::1::::<><>::
+Jump (36x36).png::CompressedTexture2D::6061575298784810436::1723155932::1723156337::1::::<><>::
+Jump Anticipation (36x36).png::CompressedTexture2D::8283916579092738348::1723155932::1723156337::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 2/Enemies/FatBird/::1723156337
+Fall (40x48).png::CompressedTexture2D::8380245754457948547::1723155932::1723156337::1::::<><>::
+Ground (40x48).png::CompressedTexture2D::1532142814935293152::1723155932::1723156337::1::::<><>::
+Hit (40x48).png::CompressedTexture2D::8883053591851631275::1723155932::1723156337::1::::<><>::
+Idle (40x48).png::CompressedTexture2D::205129755919392300::1723155932::1723156337::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 2/Enemies/Ghost/::1723156337
+Appear (44x30).png::CompressedTexture2D::4988277687948676681::1723155932::1723156337::1::::<><>::
+Desappear (44x30).png::CompressedTexture2D::5007328665038865669::1723155932::1723156337::1::::<><>::
+Gost Particles (48x16).png::CompressedTexture2D::3999109399451067890::1723155932::1723156337::1::::<><>::
+Hit (44x30).png::CompressedTexture2D::4021123979811809132::1723155932::1723156337::1::::<><>::
+Idle (44x30).png::CompressedTexture2D::4991579155329516370::1723155932::1723156337::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 2/Enemies/Mushroom/::1723156337
+Hit.png::CompressedTexture2D::6995774973479844622::1723155932::1723156337::1::::<><>::
+Idle (32x32).png::CompressedTexture2D::6432996088429361069::1723155932::1723156337::1::::<><>::
+Run (32x32).png::CompressedTexture2D::5205441368135356808::1723155932::1723156337::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 2/Enemies/Plant/::1723156337
+Attack (44x42).png::CompressedTexture2D::3049563250892090068::1723155932::1723156337::1::::<><>::
+Bullet Pieces.png::CompressedTexture2D::6929923315214170827::1723155932::1723156337::1::::<><>::
+Bullet.png::CompressedTexture2D::3193108009000675991::1723155932::1723156337::1::::<><>::
+Hit (44x42).png::CompressedTexture2D::3611898279902593019::1723155932::1723156337::1::::<><>::
+Idle (44x42).png::CompressedTexture2D::2665803875243559401::1723155932::1723156337::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 2/Enemies/Radish/::1723156337
+Hit (30x38).png::CompressedTexture2D::1666017440225683843::1723155932::1723156337::1::::<><>::
+Idle 1 (30x38).png::CompressedTexture2D::2854436427336797911::1723155932::1723156337::1::::<><>::
+Idle 2 (30x38).png::CompressedTexture2D::1311441772799820751::1723155932::1723156337::1::::<><>::
+Leafs.png::CompressedTexture2D::2697649253717591827::1723155932::1723156337::1::::<><>::
+Run (30x38).png::CompressedTexture2D::7820144620989829074::1723155932::1723156337::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 2/Enemies/Rino/::1723156337
+Hit (52x34).png::CompressedTexture2D::23196632099749815::1723155932::1723156337::1::::<><>::
+Hit Wall (52x34).png::CompressedTexture2D::2948392322300675648::1723155932::1723156337::1::::<><>::
+Idle (52x34).png::CompressedTexture2D::6168379318268659713::1723155932::1723156337::1::::<><>::
+Run (52x34).png::CompressedTexture2D::8530012493359536304::1723155932::1723156337::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 2/Enemies/Rocks/::1723156338
+Rock1_Hit.png::CompressedTexture2D::2748117349719227277::1723155932::1723156338::1::::<><>::
+Rock1_Idle (38x34).png::CompressedTexture2D::2631489476870912524::1723155932::1723156338::1::::<><>::
+Rock1_Run (38x34).png::CompressedTexture2D::5080323301117483494::1723155932::1723156338::1::::<><>::
+Rock2_Hit (32x28).png::CompressedTexture2D::2271354882480546709::1723155932::1723156338::1::::<><>::
+Rock2_Idle (32x28).png::CompressedTexture2D::5862716322667445363::1723155932::1723156338::1::::<><>::
+Rock2_Run (32x28).png::CompressedTexture2D::3807028316233159356::1723155932::1723156338::1::::<><>::
+Rock3_Hit (22x18).png::CompressedTexture2D::2669449876653493689::1723155932::1723156337::1::::<><>::
+Rock3_Idle (22x18).png::CompressedTexture2D::380728088303173199::1723155932::1723156337::1::::<><>::
+Rock3_Run (22x18).png::CompressedTexture2D::4206359448749714280::1723155932::1723156337::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 2/Enemies/Skull/::1723156338
+Hit (52x54).png::CompressedTexture2D::3659221221000571694::1723155932::1723156337::1::::<><>::
+Hit Wall 1 (52x54).png::CompressedTexture2D::2185497470190530108::1723155932::1723156337::1::::<><>::
+Hit Wall 2 (52x54).png::CompressedTexture2D::8788684162464559122::1723155932::1723156337::1::::<><>::
+Idle 1 (52x54).png::CompressedTexture2D::6574938279254709756::1723155932::1723156337::1::::<><>::
+Idle 2 (52x54).png::CompressedTexture2D::3756562490617046638::1723155932::1723156337::1::::<><>::
+Orange Particle.png::CompressedTexture2D::2114415097140350649::1723155932::1723156337::1::::<><>::
+Red Particle.png::CompressedTexture2D::1798219112700374517::1723155932::1723156337::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 2/Enemies/Slime/::1723156337
+Hit (44x30).png::CompressedTexture2D::7152868747146270172::1723155932::1723156337::1::::<><>::
+Idle-Run (44x30).png::CompressedTexture2D::7213354917955607018::1723155932::1723156337::1::::<><>::
+Particles (62x16).png::CompressedTexture2D::2261191011277638837::1723155932::1723156337::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 2/Enemies/Snail/::1723156337
+Hit (38x24).png::CompressedTexture2D::191363876772040001::1723155932::1723156337::1::::<><>::
+Idle (38x24).png::CompressedTexture2D::977381133129500465::1723155932::1723156337::1::::<><>::
+Shell Idle (38x24).png::CompressedTexture2D::4186156552578747925::1723155932::1723156337::1::::<><>::
+Shell Top Hit (38x24).png::CompressedTexture2D::1295579109772025041::1723155932::1723156337::1::::<><>::
+Shell Wall Hit (38x24).png::CompressedTexture2D::7166511343276755462::1723155932::1723156337::1::::<><>::
+Snail without shell.png::CompressedTexture2D::6624946733245968607::1723155932::1723156337::1::::<><>::
+Walk (38x24).png::CompressedTexture2D::4325054935353288942::1723155932::1723156337::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 2/Enemies/Trunk/::1723156338
+Attack (64x32).png::CompressedTexture2D::6059827104870730060::1723155932::1723156337::1::::<><>::
+Bullet Pieces.png::CompressedTexture2D::461706483578974085::1723155932::1723156337::1::::<><>::
+Bullet.png::CompressedTexture2D::7425490832945027904::1723155932::1723156337::1::::<><>::
+Hit (64x32).png::CompressedTexture2D::2046696469531289217::1723155932::1723156337::1::::<><>::
+Idle (64x32).png::CompressedTexture2D::7951037073070133186::1723155932::1723156337::1::::<><>::
+Run (64x32).png::CompressedTexture2D::2873349286834150000::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Pixel Adventure 2/Enemies/Turtle/::1723156338
+Hit (44x26).png::CompressedTexture2D::5035118630069806488::1723155932::1723156338::1::::<><>::
+Idle 1 (44x26).png::CompressedTexture2D::5099378703219836624::1723155932::1723156338::1::::<><>::
+Idle 2 (44x26).png::CompressedTexture2D::6411129452275661152::1723155932::1723156338::1::::<><>::
+Spikes in (44x26).png::CompressedTexture2D::7810100477708660057::1723155932::1723156338::1::::<><>::
+Spikes out (44x26).png::CompressedTexture2D::1573331634854957930::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Propios/::1728856058
+Asteroide.png::CompressedTexture2D::2478061451455047302::1724530406::1724530517::1::::<><>::
+Bola_de_Fuego.png::CompressedTexture2D::8527105540383327628::1724530406::1724530517::1::::<><>::
+Carros.png::CompressedTexture2D::6873384390796690596::1723857596::1724372458::1::::<><>::
+Giganto.PNG::CompressedTexture2D::1059372822037573605::1721687013::1728856058::1::::<><>::
+Godot plush.png::CompressedTexture2D::8019971836098633030::1723857596::1724372458::1::::<><>::
+Nave.png::CompressedTexture2D::402401238546636623::1724530406::1724530517::1::::<><>::
+Rueda.png::CompressedTexture2D::7425774306258963174::1723857596::1724372458::1::::<><>::
+::res://Assets/Sprites/Propios/Logos GiGame/::1724530517
+ACM-GiGame PIXEL 16.png::CompressedTexture2D::5880757876768966312::1724530406::1724530517::1::::<><>::
+ACM-GiGame PIXEL 32.png::CompressedTexture2D::647197766249479153::1724530406::1724530517::1::::<><>::
+ACM-GiGame PIXEL 48.png::CompressedTexture2D::3814629404651830732::1724530406::1724530517::1::::<><>::
+ACM-GiGame PIXEL 64.png::CompressedTexture2D::3029875366568683711::1724530406::1724530517::1::::<><>::
+ACM-GiGame PIXEL 128.png::CompressedTexture2D::5451270333360032973::1724530406::1724530517::1::::<><>::
+ACM-GiGame PIXEL 256.png::CompressedTexture2D::6809155043412185823::1724530406::1724530517::1::::<><>::
+ACM-GiGame.png::CompressedTexture2D::8236827798248974903::1724530406::1724530517::1::::<><>::
+ACM-GiGame.svg::CompressedTexture2D::7151038119049907648::1724530406::1724530517::1::::<><>::
+::res://Assets/Sprites/Sunny-land-files/::1723155932
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/::1723155932
+public-license.txt::TextFile::-1::1723155932::0::1::::<><>::
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/code/::1723155932
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/code/sunny-land/::1723155932
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/code/sunny-land/assets/::1723155932
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/code/sunny-land/assets/atlas/::1723156338
+atlas-props.json::JSON::-1::1723155932::0::1::::<><>::
+atlas-props.png::CompressedTexture2D::5423979852484154171::1723155932::1723156338::1::::<><>::
+atlas.json::JSON::-1::1723155932::0::1::::<><>::
+atlas.png::CompressedTexture2D::5031981833061978202::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/code/sunny-land/assets/environment/::1723156338
+back.png::CompressedTexture2D::5620008108811119066::1723155932::1723156338::1::::<><>::
+collision.png::CompressedTexture2D::2480921576091973037::1723155932::1723156338::1::::<><>::
+middle.png::CompressedTexture2D::6839829158331398346::1723155932::1723156338::1::::<><>::
+tileset.png::CompressedTexture2D::4728022919387747509::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/code/sunny-land/assets/maps/::1723155932
+map.json::JSON::-1::1723155932::0::1::::<><>::
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/code/sunny-land/assets/sound/::1723156337
+platformer_level03_loop.ogg::AudioStreamOggVorbis::54298782223027683::1723155932::1723156337::1::::<><>::
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/code/sunny-land/assets/sprites/::1723156338
+credits-text.png::CompressedTexture2D::668713341921317784::1723155932::1723156338::1::::<><>::
+instructions.png::CompressedTexture2D::5005652176423568080::1723155932::1723156338::1::::<><>::
+loading.png::CompressedTexture2D::994614367692113623::1723155932::1723156338::1::::<><>::
+press-enter-text.png::CompressedTexture2D::471073283421008417::1723155932::1723156338::1::::<><>::
+title-screen.png::CompressedTexture2D::465287296348207266::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/GIF/::1723155932
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/GIF/sprites/::1723155932
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/GIF/sprites/eagle/::1723155932
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/GIF/sprites/frog/::1723155932
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/GIF/sprites/FX/::1723155932
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/GIF/sprites/items/::1723155932
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/GIF/sprites/opossum/::1723155932
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/GIF/sprites/player/::1723155932
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/::1723155932
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/environment/::1723156338
+environment-preview.png::CompressedTexture2D::4344831862725086593::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/environment/layers/::1723156338
+back.png::CompressedTexture2D::5751455336875681205::1723155932::1723156338::1::::<><>::
+middle.png::CompressedTexture2D::382001222537709142::1723155932::1723156338::1::::<><>::
+props.png::CompressedTexture2D::8935902433568625311::1723155932::1723156338::1::::<><>::
+tileset.png::CompressedTexture2D::5007534888699544190::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/environment/props/::1723156338
+big-crate.png::CompressedTexture2D::6797569437055939602::1723155932::1723156338::1::::<><>::
+block-big.png::CompressedTexture2D::2574948847861057176::1723155932::1723156338::1::::<><>::
+block.png::CompressedTexture2D::6489600044476045260::1723155932::1723156338::1::::<><>::
+bush.png::CompressedTexture2D::1950599979353468276::1723155932::1723156338::1::::<><>::
+crank-down.png::CompressedTexture2D::3551763658864660142::1723155932::1723156338::1::::<><>::
+crank-up.png::CompressedTexture2D::5216806597750530025::1723155932::1723156338::1::::<><>::
+crate.png::CompressedTexture2D::6798211321723844474::1723155932::1723156338::1::::<><>::
+door-opened.png::CompressedTexture2D::4258140078689232347::1723155932::1723156338::1::::<><>::
+door.png::CompressedTexture2D::3188457965845245920::1723155932::1723156338::1::::<><>::
+face-block.png::CompressedTexture2D::7753931166377063127::1723155932::1723156338::1::::<><>::
+house.png::CompressedTexture2D::3420385494362409948::1723155932::1723156338::1::::<><>::
+platform-long.png::CompressedTexture2D::5147265238242520999::1723155932::1723156338::1::::<><>::
+rock.png::CompressedTexture2D::8889757530281142586::1723155932::1723156338::1::::<><>::
+shrooms.png::CompressedTexture2D::1748054984597034150::1723155932::1723156338::1::::<><>::
+sign.png::CompressedTexture2D::1443462658671945400::1723155932::1723156338::1::::<><>::
+skulls.png::CompressedTexture2D::4764032106201887908::1723155932::1723156338::1::::<><>::
+small-platform.png::CompressedTexture2D::5503258950573316258::1723155932::1723156338::1::::<><>::
+spike-skull.png::CompressedTexture2D::8362581824362726323::1723155932::1723156338::1::::<><>::
+spikes-top.png::CompressedTexture2D::711849941265189973::1723155932::1723156338::1::::<><>::
+spikes.png::CompressedTexture2D::3606567258280491878::1723155932::1723156338::1::::<><>::
+tree.png::CompressedTexture2D::3176973421031657327::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/::1723155932
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/cherry/::1723156338
+cherry-1.png::CompressedTexture2D::5317647544021748422::1723155932::1723156338::1::::<><>::
+cherry-2.png::CompressedTexture2D::4290484604076594333::1723155932::1723156338::1::::<><>::
+cherry-3.png::CompressedTexture2D::4658579123087335392::1723155932::1723156338::1::::<><>::
+cherry-4.png::CompressedTexture2D::660069602128841435::1723155932::1723156338::1::::<><>::
+cherry-5.png::CompressedTexture2D::580389644522445048::1723155932::1723156338::1::::<><>::
+cherry-6.png::CompressedTexture2D::9123673147415747658::1723155932::1723156338::1::::<><>::
+cherry-7.png::CompressedTexture2D::3122198583890224143::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/eagle/::1723156338
+eagle-attack-1.png::CompressedTexture2D::9144834958747685047::1723155932::1723156338::1::::<><>::
+eagle-attack-2.png::CompressedTexture2D::5811507457869298546::1723155932::1723156338::1::::<><>::
+eagle-attack-3.png::CompressedTexture2D::4855803564353975193::1723155932::1723156338::1::::<><>::
+eagle-attack-4.png::CompressedTexture2D::6119299725461297017::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/enemy-death/::1723156338
+enemy-death-1.png::CompressedTexture2D::5993234263058769557::1723155932::1723156338::1::::<><>::
+enemy-death-2.png::CompressedTexture2D::7074841713974136612::1723155932::1723156338::1::::<><>::
+enemy-death-3.png::CompressedTexture2D::752867434849512178::1723155932::1723156338::1::::<><>::
+enemy-death-4.png::CompressedTexture2D::454965946583560899::1723155932::1723156338::1::::<><>::
+enemy-death-5.png::CompressedTexture2D::8897284601357130589::1723155932::1723156338::1::::<><>::
+enemy-death-6.png::CompressedTexture2D::6190736135139473884::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/frog/::1723155932
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/frog/idle/::1723156338
+frog-idle-1.png::CompressedTexture2D::3133052432215975039::1723155932::1723156338::1::::<><>::
+frog-idle-2.png::CompressedTexture2D::512336631108317855::1723155932::1723156338::1::::<><>::
+frog-idle-3.png::CompressedTexture2D::6865245768400550136::1723155932::1723156338::1::::<><>::
+frog-idle-4.png::CompressedTexture2D::7229117638094741244::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/frog/jump/::1723156338
+frog-jump-1.png::CompressedTexture2D::5142856194312127599::1723155932::1723156338::1::::<><>::
+frog-jump-2.png::CompressedTexture2D::1888145874685111484::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/gem/::1723156338
+gem-1.png::CompressedTexture2D::8153889501972007593::1723155932::1723156338::1::::<><>::
+gem-2.png::CompressedTexture2D::4519002605104328334::1723155932::1723156338::1::::<><>::
+gem-3.png::CompressedTexture2D::8679094519137210713::1723155932::1723156338::1::::<><>::
+gem-4.png::CompressedTexture2D::4583919091338509054::1723155932::1723156338::1::::<><>::
+gem-5.png::CompressedTexture2D::613237061279915346::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/item-feedback/::1723156338
+item-feedback-1.png::CompressedTexture2D::6780642816081234226::1723155932::1723156338::1::::<><>::
+item-feedback-2.png::CompressedTexture2D::1394757263828899736::1723155932::1723156338::1::::<><>::
+item-feedback-3.png::CompressedTexture2D::1187707331584448595::1723155932::1723156338::1::::<><>::
+item-feedback-4.png::CompressedTexture2D::3790096830624053821::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/opossum/::1723156338
+opossum-1.png::CompressedTexture2D::21390626473739255::1723155932::1723156338::1::::<><>::
+opossum-2.png::CompressedTexture2D::3888760441440331479::1723155932::1723156338::1::::<><>::
+opossum-3.png::CompressedTexture2D::7230106389376984848::1723155932::1723156338::1::::<><>::
+opossum-4.png::CompressedTexture2D::3881407000670270162::1723155932::1723156338::1::::<><>::
+opossum-5.png::CompressedTexture2D::5265504029784488011::1723155932::1723156338::1::::<><>::
+opossum-6.png::CompressedTexture2D::2906171260653319258::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/::1723155932
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/climb/::1723156338
+player-climb-1.png::CompressedTexture2D::5761419193485120443::1723155932::1723156338::1::::<><>::
+player-climb-2.png::CompressedTexture2D::7870224977288529466::1723155932::1723156338::1::::<><>::
+player-climb-3.png::CompressedTexture2D::6973908394674378589::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/crouch/::1723156338
+player-crouch-1.png::CompressedTexture2D::1137361279008206464::1723155932::1723156338::1::::<><>::
+player-crouch-2.png::CompressedTexture2D::2756055275898676466::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/hurt/::1723156338
+player-hurt-1.png::CompressedTexture2D::8286526219832883558::1723155932::1723156338::1::::<><>::
+player-hurt-2.png::CompressedTexture2D::2968138791043777041::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/idle/::1723156338
+player-idle-1.png::CompressedTexture2D::168993168941721742::1723155932::1723156338::1::::<><>::
+player-idle-2.png::CompressedTexture2D::8635189575926465227::1723155932::1723156338::1::::<><>::
+player-idle-3.png::CompressedTexture2D::1798292329645091298::1723155932::1723156338::1::::<><>::
+player-idle-4.png::CompressedTexture2D::5422546784933736134::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/jump/::1723156338
+player-jump-1.png::CompressedTexture2D::4424549998426036488::1723155932::1723156338::1::::<><>::
+player-jump-2.png::CompressedTexture2D::2503785765569187423::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/run/::1723156338
+player-run-1.png::CompressedTexture2D::6546115315151104095::1723155932::1723156338::1::::<><>::
+player-run-2.png::CompressedTexture2D::4715723317818089941::1723155932::1723156338::1::::<><>::
+player-run-3.png::CompressedTexture2D::6449887409824891792::1723155932::1723156338::1::::<><>::
+player-run-4.png::CompressedTexture2D::31311929298296514::1723155932::1723156338::1::::<><>::
+player-run-5.png::CompressedTexture2D::3069196170492286022::1723155932::1723156338::1::::<><>::
+player-run-6.png::CompressedTexture2D::7355893576448190602::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/spritesheets/::1723156338
+cherry.png::CompressedTexture2D::4775057326564808364::1723155932::1723156338::1::::<><>::
+eagle-attack.png::CompressedTexture2D::6230098589829352631::1723155932::1723156338::1::::<><>::
+enemy-deadth.png::CompressedTexture2D::7567293700459359578::1723155932::1723156338::1::::<><>::
+frog-idle.png::CompressedTexture2D::8697643412446629425::1723155932::1723156338::1::::<><>::
+frog-jump.png::CompressedTexture2D::3084345671731763451::1723155932::1723156338::1::::<><>::
+gem.png::CompressedTexture2D::584113641310901315::1723155932::1723156338::1::::<><>::
+oposum.png::CompressedTexture2D::7448216954822466989::1723155932::1723156338::1::::<><>::
+payer-run.png::CompressedTexture2D::5584390162163729540::1723155932::1723156338::1::::<><>::
+player-climb.png::CompressedTexture2D::385912511929592864::1723155932::1723156338::1::::<><>::
+player-crouch.png::CompressedTexture2D::6745613054109114221::1723155932::1723156338::1::::<><>::
+player-hurt.png::CompressedTexture2D::1974900636934257017::1723155932::1723156338::1::::<><>::
+player-idle.png::CompressedTexture2D::5748346237671557860::1723155932::1723156338::1::::<><>::
+player-jump.png::CompressedTexture2D::4946742590768858265::1723155932::1723156338::1::::<><>::
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PSD/::1723155932
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PSD/environment/::1723155932
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PSD/MISC/::1723155932
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PSD/sprites/::1723155932
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PSD/sprites/eagle/::1723155932
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PSD/sprites/frog/::1723155932
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PSD/sprites/FX/::1723155932
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PSD/sprites/items/::1723155932
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PSD/sprites/opossum/::1723155932
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PSD/sprites/player/::1723155932
+::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/Sound/::1723156337
+platformer_level03.mp3::AudioStreamMP3::7686328489175700537::1723155932::1723156337::1::::<><>::
+platformer_level03_loop.ogg::AudioStreamOggVorbis::7217136952943193541::1723155932::1723156337::1::::<><>::
+::res://Clase 1 - Introduccionn/::1730475973
+Clase 1.gd::GDScript::-1::1723857596::0::1::::<>Node<>::
+Clase 1.tscn::PackedScene::3338334628223572094::1730475973::0::1::::<><>::res://Clase 1 - Introduccionn/Clase 1.gd<>uid://cae74lhnnqf7w::::res://Recursos de Godot/Temas Clase 1.tres<>uid://cbtuj76ux3b66::::res://Recursos de Godot/Tileset_creado.tres<>uid://cn7bvnifiniw8::::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/environment/layers/back.png<>uid://cndi16o0tuaj8::::res://Clase 8/Jugador_AP.tscn<>uid://vyhqgix3ixrb::::res://icon.svg<>uid://cxnit1wuxsumx::::res://Clase 1 - Introduccionn/GodotPlush.tscn<>uid://dpl8l6c77ddid::::res://Assets/Sprites/Propios/Logos GiGame/ACM-GiGame.png<>uid://v3bbiesfht3u::::res://Clase 6/Plataforma/Plataforma.tscn<>uid://b0sihiu37b3o3::::res://Assets/Sprites/mystic_woods_free_2.1/sprites/characters/slime.png
+GodotPlush.tscn::PackedScene::6414542748423024895::1728849565::0::1::::<><>::uid://cskcbcifk0nys::::res://Assets/Sprites/Propios/Godot plush.png<>uid://cae74lhnnqf7w::::res://Recursos de Godot/Temas Clase 1.tres
+::res://Clase 2 - Programacion basica/::1732211522
+Clase 2.tscn::PackedScene::7182784493448583742::1725639452::0::1::::<><>::uid://cbtuj76ux3b66::::res://Recursos de Godot/Tileset_creado.tres<>uid://cdvbac8r05ip1::::res://Clase 2 - Programacion basica/Programacion_Basica.tscn<>uid://cg0fybnjdidgn::::res://Assets/Sprites/Propios/Logos GiGame/ACM-GiGame.png<>uid://cndi16o0tuaj8::::res://Clase 8/Jugador_AP.tscn
+label.gd::GDScript::-1::1725639452::0::1::::<>Label<>::
+label_2.gd::GDScript::-1::1725639452::0::1::::<>Label<>::
+label_3.gd::GDScript::-1::1725639452::0::1::::<>Label<>::
+Movimiento2D.gd::GDScript::-1::1723857596::0::1::::<>Sprite2D<>::
+Operadores Basicos.gd::GDScript::-1::1725639452::0::1::::<>OptionButton<>::
+Operadores Comparativos.gd::GDScript::-1::1725639452::0::1::::<>OptionButton<>::
+Operadores Logicos.gd::GDScript::-1::1725639452::0::1::::<>OptionButton<>::
+programacion_basica.gd::GDScript::-1::1732211522::0::1::::<>Control<>::
+Programacion_Basica.tscn::PackedScene::5026820704960566552::1732211522::0::1::::<><>::uid://cae74lhnnqf7w::::res://Recursos de Godot/Temas Clase 1.tres<>res://Clase 2 - Programacion basica/programacion_basica.gd<>uid://lsvn17lhspnm::::res://Clase 2 - Programacion basica/Assests/Theme_Class_2.tres<>uid://qx44h3v1is8r::::res://Clase 2 - Programacion basica/Assests/plus.svg<>uid://catwmbcqbrky3::::res://Clase 2 - Programacion basica/Assests/minus.svg<>uid://b8fimtymvr75y::::res://Clase 2 - Programacion basica/Assests/x.svg<>uid://tturouue4ggw::::res://Clase 2 - Programacion basica/Assests/divide.svg<>uid://ckq26in7ikti4::::res://Clase 2 - Programacion basica/Assests/percentage.svg<>uid://dd0dt3aan52yg::::res://Clase 2 - Programacion basica/Assests/equal-equal.svg<>uid://bpxebgwluurgi::::res://Clase 2 - Programacion basica/Assests/math-greater.svg<>res://Clase 2 - Programacion basica/Operadores Basicos.gd<>uid://bq2vfao1gitf0::::res://Clase 2 - Programacion basica/Assests/math-lower.svg<>uid://ca6b46kgv6tp8::::res://Clase 2 - Programacion basica/Assests/Diferente.svg<>uid://g0xrdaqnskcm::::res://Clase 2 - Programacion basica/Assests/math-equal-greater.svg<>uid://ca2oi58jaramp::::res://Clase 2 - Programacion basica/Assests/math-equal-lower.svg<>uid://bf7xaciu2eit1::::res://Clase 2 - Programacion basica/Assests/And.svg<>uid://bdy4v8kipno0r::::res://Clase 2 - Programacion basica/Assests/lane.svg<>res://Clase 2 - Programacion basica/Operadores Comparativos.gd<>uid://dmmnt82xbp7fm::::res://Clase 2 - Programacion basica/Assests/exclamation-mark.svg<>res://Clase 2 - Programacion basica/Operadores Logicos.gd<>res://Clase 2 - Programacion basica/label.gd<>res://Clase 2 - Programacion basica/label_2.gd<>res://Clase 2 - Programacion basica/label_3.gd
+sprite_2d.tscn::PackedScene::6360577034752837528::1723857596::0::1::::<><>::uid://vyhqgix3ixrb::::res://icon.svg<>res://Clase 2 - Programacion basica/Movimiento2D.gd
+::res://Clase 2 - Programacion basica/Assests/::1730475940
+ampersand.svg::CompressedTexture2D::7671868819557888188::1725639452::1725830669::1::::<><>::
+And.svg::CompressedTexture2D::8453042618687681429::1725639452::1725830669::1::::<><>::
+Diferente.svg::CompressedTexture2D::4960866122581788327::1725639452::1725830669::1::::<><>::
+divide.svg::CompressedTexture2D::7115957926899241095::1724372389::1724372458::1::::<><>::
+equal-equal.svg::CompressedTexture2D::7192955201679789406::1724372389::1724372458::1::::<><>::
+equal.svg::CompressedTexture2D::6445192693470505496::1724372389::1724372458::1::::<><>::
+exclamation-mark.svg::CompressedTexture2D::6663821194676337803::1724372389::1724372458::1::::<><>::
+lane.svg::CompressedTexture2D::3333989439838687608::1725639452::1725830669::1::::<><>::
+math-equal-greater.svg::CompressedTexture2D::6981719221952385960::1724372389::1724372458::1::::<><>::
+math-equal-lower.svg::CompressedTexture2D::6107125166673516469::1724372389::1724372458::1::::<><>::
+math-greater.svg::CompressedTexture2D::3515479516357026792::1724372389::1724372458::1::::<><>::
+math-lower.svg::CompressedTexture2D::2934577330491322028::1724372389::1724372458::1::::<><>::
+minus.svg::CompressedTexture2D::2422892307706200666::1724372389::1724372458::1::::<><>::
+Or.svg::CompressedTexture2D::744681205966690074::1725639452::1725830669::1::::<><>::
+percentage.svg::CompressedTexture2D::1096778435333037188::1724372389::1724372458::1::::<><>::
+plus.svg::CompressedTexture2D::2378527659873106786::1724372389::1724372458::1::::<><>::
+Theme_Class_2.tres::Theme::810535767311005922::1730475940::0::1::::<><>::uid://d4dfqbpei5yen::::res://Assets/Fuentes/PressStart2P-Regular.ttf
+x.svg::CompressedTexture2D::8077622911077746265::1724372389::1724372458::1::::<><>::
+::res://Clase 3 - POO/::1728849565
+Carro.gd::GDScript::-1::1728849565::0::1::::Carro<>Node<>::
+CarroImp.gd::GDScript::-1::1728849565::0::1::::<>PathFollow2D<>::
+CarroImp.tscn::PackedScene::8127484518887652985::1728849565::0::1::::<><>::res://Clase 3 - POO/CarroImp.gd<>uid://d4g0g2ls6xoes::::res://Assets/Sprites/Propios/Carros.png<>uid://cae74lhnnqf7w::::res://Recursos de Godot/Temas Clase 1.tres
+Clase 3 - POO.gd::GDScript::-1::1724372389::0::1::::<>Node2D<>::
+Clase 3.tscn::PackedScene::1329295175022610567::1728849565::0::1::::<><>::res://Clase 3 - POO/Clase 3 - POO.gd<>uid://cae74lhnnqf7w::::res://Recursos de Godot/Temas Clase 1.tres
+::res://Clase 4/::1728849565
+Asteroide.tscn::PackedScene::5673184610197825803::1724530406::0::1::::<><>::res://Clase 4/Proyectil.gd<>uid://b60lo7eudid0q::::res://Assets/Sprites/Propios/Asteroide.png
+BolaDeFuego.tscn::PackedScene::3129512875904998555::1728849565::0::1::::<><>::res://Clase 4/Proyectil.gd<>uid://cvd53hnnitema::::res://Assets/Sprites/Propios/Bola_de_Fuego.png
+Mundo.gd::GDScript::-1::1725639452::0::1::::<>Node2D<>::
+Mundo.tscn::PackedScene::6107838574428194474::1728849565::0::1::::<><>::res://Clase 4/Mundo.gd<>uid://c4of220fr717m::::res://Clase 4/Nave.tscn
+Nave.gd::GDScript::-1::1725639452::0::1::::<>Sprite2D<>::
+Nave.tscn::PackedScene::6837572379846990628::1728849565::0::1::::<><>::uid://m1em7myeyaki::::res://Assets/Sprites/Propios/Nave.png<>res://Clase 4/Nave.gd
+Proyectil.gd::GDScript::-1::1725639452::0::1::::<>CharacterBody2D<>::
+::res://Clase 6/::1721687013
+::res://Clase 6/Cintas_transportadoras/::1728849565
+Cinta.tscn::PackedScene::6224828981699259124::1728849565::0::1::::<><>::uid://d2lpg6pwsa1w1::::res://Assets/Sprites/Pixel Adventure 1/Free/Traps/Falling Platforms/Off.png
+Cintas_transportadores.tscn::PackedScene::4205036042084945627::1728849565::0::1::::<><>::uid://cuxma2uf6rt5u::::res://Clase 6/Cintas_transportadoras/Cinta.tscn<>uid://cqicat8131rot::::res://Assets/Sprites/Pixel Adventure 1/Free/Background/Gray.png<>uid://cae74lhnnqf7w::::res://Recursos de Godot/Temas Clase 1.tres<>uid://bxk2a275cqdcs::::res://Assets/Sprites/Propios/Godot plush.png<>uid://bdo53gdf76tio::::res://Clase 6/Cintas_transportadoras/Rueda.tscn
+Rueda.tscn::PackedScene::2627760335222060738::1723857596::0::1::::<><>::uid://doojsu7n03ovl::::res://Assets/Sprites/Propios/Rueda.png
+::res://Clase 6/Plataforma/::1728866183
+Jugador.gd::GDScript::-1::1728866183::0::1::::<>CharacterBody2D<>::
+Plataforma.gd::GDScript::-1::1723160204::0::1::::<>AnimatableBody2D<>::
+Plataforma.tscn::PackedScene::1531831223489861344::1728849565::0::1::::<><>::res://Clase 6/Plataforma/Plataforma.gd<>uid://vyhqgix3ixrb::::res://icon.svg
+Plataforma_movil.gd::GDScript::-1::1723159037::0::1::::<>Node2D<>::
+Plataforma_movil.tscn::PackedScene::4910201544620093377::1728856281::0::1::::<><>::res://Clase 6/Plataforma/Plataforma_movil.gd<>res://Clase 6/Plataforma/Jugador.gd<>uid://pdfylibt6x3j::::res://Assets/Sprites/Propios/Giganto.PNG<>uid://vyhqgix3ixrb::::res://icon.svg<>uid://v3bbiesfht3u::::res://Clase 6/Plataforma/Plataforma.tscn
+::res://Clase 7/::1728849565
+Areas.gd::GDScript::-1::1728849565::0::1::::<>Node2D<>::
+Areas.tscn::PackedScene::5232498339226837816::1728849565::0::1::::<><>::res://Clase 7/Areas.gd<>uid://vyhqgix3ixrb::::res://icon.svg<>res://Clase 7/Jugador.gd<>uid://owei0ip0ern4::::res://Assets/Sprites/Pixel Adventure 2/Enemies/Turtle/Hit (44x26).png<>uid://cr0qmu3k6cm6e::::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/idle/player-idle-1.png
+Escenario.tscn::PackedScene::3251821586116385647::1728849565::0::1::::<><>::uid://vyhqgix3ixrb::::res://icon.svg
+Jugador.gd::GDScript::-1::1721687013::0::1::::<>CharacterBody2D<>::
+::res://Clase 8/::1732211522
+Animaciones.tscn::PackedScene::8288238520053640237::1730473678::0::1::::<><>::res://Clase 8/Jugador_AP.gd<>uid://dopjf8vkrui2f::::res://Assets/Sprites/Adventurer/adventurer-Sheet.png<>uid://b083aqvagtqo3::::res://Clase 8/Jugador_AS.tscn<>uid://6i7lu67kqyrg::::res://Assets/Sprites/Pixel Adventure 1/Free/Items/Boxes/Box2/Idle.png<>uid://cbtuj76ux3b66::::res://Recursos de Godot/Tileset_creado.tres<>res://Clase 8/Detectar_Clicks.gd
+Detectar_Clicks.gd::GDScript::-1::1721687013::0::1::::<>Sprite2D<>::
+Jugador_AP.gd::GDScript::-1::1732211556::0::1::::<>CharacterBody2D<>::
+Jugador_AP.tscn::PackedScene::5692023285539640131::1732211573::0::1::::<><>::res://Clase 8/Jugador_AP.gd<>uid://dsmcbx7isvpjv::::res://Assets/Sprites/Adventurer/adventurer-Sheet.png
+Jugador_AS.gd::GDScript::-1::1721687013::0::1::::<>CharacterBody2D<>::
+Jugador_AS.tscn::PackedScene::4210967189148623088::1732211522::0::1::::<><>::res://Clase 8/Jugador_AS.gd<>uid://cukuo3eccet7l::::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/jump/player-jump-2.png<>uid://cimu0rhtx6uvj::::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/idle/player-idle-1.png<>uid://ditkm64ge0o5n::::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/idle/player-idle-2.png<>uid://c30x4moaksobi::::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/idle/player-idle-3.png<>uid://byt773rtm422v::::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/idle/player-idle-4.png<>uid://dwm0x6ksdxkwx::::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/jump/player-jump-1.png<>uid://cs0qj2sybumua::::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/run/player-run-1.png<>uid://jssw3qwnc0tg::::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/run/player-run-2.png<>uid://2nl807pxmrgw::::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/run/player-run-3.png<>uid://6rnxbjdcwfpl::::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/run/player-run-4.png<>uid://d0qdyw24gbjrg::::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/run/player-run-5.png<>uid://c5m0mv06iq6fh::::res://Assets/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/run/player-run-6.png
+::res://Clase 9/::1730473679
+Camion.ogg::AudioStreamOggVorbis::5575388141052752908::1721687013::1721687065::1::::<><>::
+FlatboxStyle.tres::StyleBoxFlat::8381858697594848911::1721687013::0::1::::<><>::
+FORTE.TTF::FontFile::8463734808626761288::1721687013::1721687065::1::::<><>::
+GUI y Camara.gd::GDScript::-1::1721687013::0::1::::<>Node2D<>::
+HoverButton.tres::StyleBoxFlat::6408501118825939448::1721687013::0::1::::<><>::
+JugadorAdornado.gd::GDScript::-1::1728866183::0::1::::<>CharacterBody2D<>::
+PressedButton.tres::StyleBoxFlat::5602790770476264334::1721687013::0::1::::<><>::
+Salto.ogg::AudioStreamOggVorbis::1557024780612735045::1721687013::1721687065::1::::<><>::
+UI y UX.tscn::PackedScene::7284372037029389613::1730473679::0::1::::<><>::res://Clase 6/Plataforma/Plataforma_movil.gd<>res://Clase 9/JugadorAdornado.gd<>uid://pdfylibt6x3j::::res://Assets/Sprites/Propios/Giganto.PNG<>uid://wgh8acr588yj::::res://Clase 9/Salto.ogg<>uid://vyhqgix3ixrb::::res://icon.svg<>uid://clo03fj8rt5lw::::res://Clase 9/Camion.ogg<>res://Clase 6/Plataforma/Plataforma.gd<>uid://dtm61jfmptoa5::::res://Clase 9/UITheme.tres
+UITheme.tres::Theme::8519551751668129950::1730473310::0::1::::<><>::uid://dst5qf7enq25q::::res://Clase 9/FORTE.TTF<>uid://cxklcvfwbv7uy::::res://Clase 9/HoverButton.tres<>uid://droh8ukbct0vj::::res://Clase 9/FlatboxStyle.tres<>uid://cl3be7di8llyk::::res://Clase 9/PressedButton.tres
+::res://Recursos de Godot/::1732211522
+Temas Clase 1.tres::Theme::4783094199373361178::1732211522::0::1::::<><>::uid://dt3r7cbr4fanf::::res://Assets/Fuentes/PressStart2P-Regular.ttf
+Tileset_creado.tres::TileSet::4883485529928532049::1732211522::0::1::::<><>::uid://c5xqaxs7sib77::::res://Assets/Sprites/Pixel Adventure 1/Free/Terrain/Terrain (16x16).png
+::res://Releases/::1730476340
+::res://Releases/HTML5/::1732211455
+::res://Releases/Linux/::1732211454
+::res://Releases/Windows/::1732211454

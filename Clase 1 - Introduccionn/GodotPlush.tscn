@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=3 uid="uid://cxnit1wuxsumx"]
+
+[ext_resource type="Texture2D" uid="uid://dmi608wj6mj6u" path="res://Assets Generales/Sprites/Propios/Godot plush.png" id="1_rbwy1"]
+[ext_resource type="Theme" uid="uid://cae74lhnnqf7w" path="res://Recursos de Godot/Temas Clase 1.tres" id="2_p85ll"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_mnxl0"]
+friction = 0.0
+bounce = 1.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_umjwx"]
+radius = 18.1108
+
+[node name="GodotPlush" type="RigidBody2D"]
+collision_mask = 3
+physics_material_override = SubResource("PhysicsMaterial_mnxl0")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("1_rbwy1")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_umjwx")
+
+[node name="Label" type="Label" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -88.0
+offset_top = -32.0
+offset_right = 88.0
+offset_bottom = -9.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2_p85ll")
+text = "¡Soy un Cuerpo Rigido!"

@@ -1,0 +1,182 @@
+[gd_scene load_steps=9 format=3 uid="uid://de8tcfo8va1rm"]
+
+[ext_resource type="Theme" uid="uid://bnoxaja50squm" path="res://Assets Generales/Themes/GUI general.tres" id="1_o10b5"]
+[ext_resource type="Script" uid="uid://dvjascdhbvk61" path="res://Clase 2 y 3 -- Prog en GDScript - Nodos/InterfazClase2.gd" id="2_j45ky"]
+[ext_resource type="Texture2D" uid="uid://c46rvwa7lilai" path="res://Assets Generales/Sprites/Propios/Carros.png" id="3_obid5"]
+[ext_resource type="Texture2D" uid="uid://vyhqgix3ixrb" path="res://icon.svg" id="4_trlu5"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_eliwo"]
+atlas = ExtResource("3_obid5")
+region = Rect2(0, 0, 16, 16)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_obid5"]
+atlas = ExtResource("3_obid5")
+region = Rect2(16, 0, 16, 0)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kx1oe"]
+atlas = ExtResource("3_obid5")
+region = Rect2(32, 0, 16, 0)
+filter_clip = true
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jht3e"]
+atlas = ExtResource("3_obid5")
+region = Rect2(48, 0, 16, 0)
+filter_clip = true
+
+[node name="InterfazClase2" type="Control" node_paths=PackedStringArray("SelectorMarca", "SelectorVelocidad", "SelectorColor", "ListadoCarros")]
+texture_filter = 1
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_o10b5")
+script = ExtResource("2_j45ky")
+SelectorMarca = NodePath("PanelContainer/MarginContainer/VBoxContainer/MrgnCampoMarca/CampoMarca/opMarca")
+SelectorVelocidad = NodePath("PanelContainer/MarginContainer/VBoxContainer/MrgnCampoVelocidad/CampoVelocidad/sldVelocidad")
+SelectorColor = NodePath("PanelContainer/MarginContainer/VBoxContainer/MrgnCampoColor/CampoVelocidad/clrColor")
+ListadoCarros = NodePath("PanelContainer/MarginContainer/VBoxContainer/SeccionFinal/ListadoCarros/ListaCarros")
+metadata/_edit_horizontal_guides_ = [64.0, 576.0]
+metadata/_edit_vertical_guides_ = [64.0, 576.0, 64.0]
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.056
+anchor_top = 0.099
+anchor_right = 0.5
+anchor_bottom = 0.889
+offset_left = -0.512001
+offset_top = -0.152008
+offset_right = 4.0
+offset_bottom = -0.0720215
+
+[node name="MarginContainer" type="MarginContainer" parent="PanelContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/MarginContainer"]
+layout_mode = 2
+
+[node name="Titulo" type="RichTextLabel" parent="PanelContainer/MarginContainer/VBoxContainer"]
+custom_minimum_size = Vector2(496, 64)
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 48
+bbcode_enabled = true
+text = "[center][wave amp=50.0 freq=5.0 connected=1]FABRICA DE CARROS[/wave]"
+
+[node name="MrgnCampoMarca" type="MarginContainer" parent="PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_right = 0
+
+[node name="CampoMarca" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/MrgnCampoMarca"]
+custom_minimum_size = Vector2(496, 32)
+layout_mode = 2
+
+[node name="txtMarca" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/MrgnCampoMarca/CampoMarca"]
+custom_minimum_size = Vector2(248, 0)
+layout_mode = 2
+text = "Marca"
+horizontal_alignment = 1
+
+[node name="opMarca" type="OptionButton" parent="PanelContainer/MarginContainer/VBoxContainer/MrgnCampoMarca/CampoMarca"]
+custom_minimum_size = Vector2(248, 0)
+layout_mode = 2
+selected = 0
+item_count = 4
+popup/item_0/text = "Renault"
+popup/item_0/icon = SubResource("AtlasTexture_eliwo")
+popup/item_0/id = 0
+popup/item_1/text = "Formula 1"
+popup/item_1/icon = SubResource("AtlasTexture_obid5")
+popup/item_1/id = 1
+popup/item_2/text = "Toyota"
+popup/item_2/icon = SubResource("AtlasTexture_kx1oe")
+popup/item_2/id = 2
+popup/item_3/text = "Camion"
+popup/item_3/icon = SubResource("AtlasTexture_jht3e")
+popup/item_3/id = 3
+
+[node name="MrgnCampoVelocidad" type="MarginContainer" parent="PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_right = 0
+
+[node name="CampoVelocidad" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/MrgnCampoVelocidad"]
+custom_minimum_size = Vector2(496, 32)
+layout_mode = 2
+
+[node name="txtVelocidad" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/MrgnCampoVelocidad/CampoVelocidad"]
+custom_minimum_size = Vector2(248, 0)
+layout_mode = 2
+text = "Velocidad"
+horizontal_alignment = 1
+
+[node name="sldVelocidad" type="HSlider" parent="PanelContainer/MarginContainer/VBoxContainer/MrgnCampoVelocidad/CampoVelocidad"]
+custom_minimum_size = Vector2(248, 32)
+layout_mode = 2
+size_flags_horizontal = 3
+min_value = 100.0
+max_value = 1000.0
+step = 10.0
+value = 100.0
+ticks_on_borders = true
+
+[node name="MrgnCampoColor" type="MarginContainer" parent="PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_right = 0
+
+[node name="CampoVelocidad" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/MrgnCampoColor"]
+custom_minimum_size = Vector2(496, 32)
+layout_mode = 2
+
+[node name="txtColor" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/MrgnCampoColor/CampoVelocidad"]
+custom_minimum_size = Vector2(248, 0)
+layout_mode = 2
+text = "Color"
+horizontal_alignment = 1
+
+[node name="clrColor" type="ColorPickerButton" parent="PanelContainer/MarginContainer/VBoxContainer/MrgnCampoColor/CampoVelocidad"]
+custom_minimum_size = Vector2(248, 2)
+layout_mode = 2
+color = Color(1, 1, 1, 1)
+edit_alpha = false
+
+[node name="SeccionFinal" type="HBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="ListadoCarros" type="VBoxContainer" parent="PanelContainer/MarginContainer/VBoxContainer/SeccionFinal"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="txtCarrosCreados" type="Label" parent="PanelContainer/MarginContainer/VBoxContainer/SeccionFinal/ListadoCarros"]
+layout_mode = 2
+text = "Carros Creados"
+horizontal_alignment = 1
+
+[node name="ListaCarros" type="ItemList" parent="PanelContainer/MarginContainer/VBoxContainer/SeccionFinal/ListadoCarros"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+auto_width = true
+max_columns = 2
+same_column_width = true
+
+[node name="Icon" type="Sprite2D" parent="PanelContainer/MarginContainer/VBoxContainer/SeccionFinal/ListadoCarros/ListaCarros"]
+position = Vector2(198, 137)
+texture = ExtResource("4_trlu5")
+
+[node name="BtnCrearCarro" type="Button" parent="PanelContainer/MarginContainer/VBoxContainer/SeccionFinal"]
+custom_minimum_size = Vector2(120, 24)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+text = "Crear Carro"
+
+[connection signal="item_clicked" from="PanelContainer/MarginContainer/VBoxContainer/SeccionFinal/ListadoCarros/ListaCarros" to="." method="_on_lista_carros_item_clicked"]
+[connection signal="pressed" from="PanelContainer/MarginContainer/VBoxContainer/SeccionFinal/BtnCrearCarro" to="." method="crear_carro"]

@@ -1,0 +1,182 @@
+[gd_scene load_steps=14 format=3 uid="uid://db1usp6sc5dpt"]
+
+[ext_resource type="Script" uid="uid://kapnpeh2tha" path="res://Clase 6/Plataforma/Plataforma_movil.gd" id="1_kfkdx"]
+[ext_resource type="Script" uid="uid://bp64l4lrmquyh" path="res://Clase 9/JugadorAdornado.gd" id="2_up5qr"]
+[ext_resource type="Texture2D" uid="uid://pdfylibt6x3j" path="res://Assets Generales/Sprites/Propios/Giganto.PNG" id="3_85gem"]
+[ext_resource type="AudioStream" uid="uid://wgh8acr588yj" path="res://Clase 9/Salto.ogg" id="4_2f8re"]
+[ext_resource type="Texture2D" uid="uid://vyhqgix3ixrb" path="res://icon.svg" id="5_cpep4"]
+[ext_resource type="AudioStream" uid="uid://clo03fj8rt5lw" path="res://Clase 9/Camion.ogg" id="6_e8upr"]
+[ext_resource type="Script" uid="uid://cesbyw2j1436q" path="res://Clase 6/Plataforma/Plataforma.gd" id="6_xl3s3"]
+[ext_resource type="Theme" uid="uid://dtm61jfmptoa5" path="res://Clase 9/UITheme.tres" id="7_bgfr3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nmsu5"]
+size = Vector2(35, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kq06s"]
+size = Vector2(617, 263)
+
+[sub_resource type="Curve2D" id="Curve2D_x7uci"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 712, 574, 0, 0, 0, 0, 712, 200, 0, 0, 0, 0, 712, 574)
+}
+point_count = 3
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hmte3"]
+size = Vector2(248, 64)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_s672p"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_kfkdx")
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 1215.0
+offset_top = 291.0
+offset_right = 1501.0
+offset_bottom = 314.0
+text = "Esta GUI está en el mundo "
+horizontal_alignment = 1
+
+[node name="Jugador" type="CharacterBody2D" parent="."]
+position = Vector2(119, 334)
+platform_on_leave = 2
+script = ExtResource("2_up5qr")
+
+[node name="Giganto" type="Sprite2D" parent="Jugador"]
+texture_filter = 1
+texture = ExtResource("3_85gem")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Jugador"]
+position = Vector2(0.5, 2)
+shape = SubResource("RectangleShape2D_nmsu5")
+
+[node name="Camera2D" type="Camera2D" parent="Jugador"]
+visible = false
+drag_horizontal_enabled = true
+drag_vertical_enabled = true
+drag_bottom_margin = 0.0
+editor_draw_limits = true
+editor_draw_drag_margin = true
+
+[node name="LabelJugador" type="Label" parent="Jugador"]
+offset_top = -39.0
+offset_right = 40.0
+offset_bottom = -16.0
+
+[node name="ProgressBar" type="ProgressBar" parent="Jugador"]
+custom_minimum_size = Vector2(100, 10)
+offset_left = 24.0
+offset_top = 2.0
+offset_right = 124.0
+offset_bottom = 29.0
+rotation = -1.57079
+show_percentage = false
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Jugador"]
+stream = ExtResource("4_2f8re")
+autoplay = true
+
+[node name="Escenario" type="StaticBody2D" parent="."]
+position = Vector2(-139, 574)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Escenario"]
+position = Vector2(231, -56)
+shape = SubResource("RectangleShape2D_kq06s")
+
+[node name="Icon" type="Sprite2D" parent="Escenario"]
+position = Vector2(230.5, -56)
+scale = Vector2(4.82031, 2.04688)
+texture = ExtResource("5_cpep4")
+
+[node name="Escenario2" type="StaticBody2D" parent="."]
+position = Vector2(1102, 574)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Escenario2"]
+position = Vector2(231, -56)
+shape = SubResource("RectangleShape2D_kq06s")
+
+[node name="Icon" type="Sprite2D" parent="Escenario2"]
+position = Vector2(230.5, -56)
+scale = Vector2(4.82031, 2.04688)
+texture = ExtResource("5_cpep4")
+
+[node name="Path2D" type="Path2D" parent="."]
+curve = SubResource("Curve2D_x7uci")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+position = Vector2(712, 574)
+rotation = -1.5708
+rotates = false
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" parent="Path2D/PathFollow2D" node_paths=PackedStringArray("seguidor")]
+rotation = 1.5708
+disable_mode = 2
+sync_to_physics = false
+script = ExtResource("6_xl3s3")
+seguidor = NodePath("..")
+
+[node name="Sprite2D" type="Sprite2D" parent="Path2D/PathFollow2D/AnimatableBody2D"]
+modulate = Color(0.137255, 0.87451, 0, 1)
+scale = Vector2(1.9375, 0.5)
+texture = ExtResource("5_cpep4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D/PathFollow2D/AnimatableBody2D"]
+shape = SubResource("RectangleShape2D_hmte3")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="Path2D/PathFollow2D/AnimatableBody2D"]
+stream = ExtResource("6_e8upr")
+volume_db = -9.17
+autoplay = true
+max_distance = 500.0
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(712, 648)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("WorldBoundaryShape2D_s672p")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Control" type="Control" parent="CanvasLayer"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("7_bgfr3")
+
+[node name="PanelContainer" type="PanelContainer" parent="CanvasLayer/Control"]
+custom_minimum_size = Vector2(400, 250)
+layout_mode = 2
+offset_right = 400.0
+offset_bottom = 250.0
+
+[node name="CenterContainer" type="CenterContainer" parent="CanvasLayer/Control/PanelContainer"]
+layout_mode = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/Control/PanelContainer/CenterContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="CanvasLayer/Control/PanelContainer/CenterContainer/VBoxContainer"]
+layout_mode = 2
+text = "Esta GUI está en el CanvasLayer "
+horizontal_alignment = 1
+
+[node name="Button" type="Button" parent="CanvasLayer/Control/PanelContainer/CenterContainer/VBoxContainer"]
+custom_minimum_size = Vector2(100, 50)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+theme_override_font_sizes/font_size = 16
+text = "Boton en el Layout"
+
+[node name="LineEdit" type="LineEdit" parent="CanvasLayer/Control/PanelContainer/CenterContainer/VBoxContainer"]
+layout_mode = 2
+placeholder_text = "Ingrese nombre del jugador"
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="pressed" from="CanvasLayer/Control/PanelContainer/CenterContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="text_submitted" from="CanvasLayer/Control/PanelContainer/CenterContainer/VBoxContainer/LineEdit" to="." method="_on_line_edit_text_submitted"]

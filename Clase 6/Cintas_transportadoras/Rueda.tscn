@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bdo53gdf76tio"]
+
+[ext_resource type="Texture2D" uid="uid://dd2dohdllp7xq" path="res://Assets Generales/Sprites/Propios/Rueda.png" id="1_tqjcp"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_1sveo"]
+rough = true
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_v1wqd"]
+radius = 32.0156
+
+[node name="Rueda" type="StaticBody2D"]
+physics_material_override = SubResource("PhysicsMaterial_1sveo")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_tqjcp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_v1wqd")

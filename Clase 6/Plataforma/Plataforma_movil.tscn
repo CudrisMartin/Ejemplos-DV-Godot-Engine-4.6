@@ -1,0 +1,82 @@
+[gd_scene load_steps=10 format=3 uid="uid://cb7skjf16etv2"]
+
+[ext_resource type="Script" uid="uid://kapnpeh2tha" path="res://Clase 6/Plataforma/Plataforma_movil.gd" id="1_37ak3"]
+[ext_resource type="Script" uid="uid://dja5mg0krvgy0" path="res://Clase 6/Plataforma/Jugador.gd" id="2_4tduv"]
+[ext_resource type="Texture2D" uid="uid://pdfylibt6x3j" path="res://Assets Generales/Sprites/Propios/Giganto.PNG" id="3_21ubk"]
+[ext_resource type="Texture2D" uid="uid://vyhqgix3ixrb" path="res://icon.svg" id="4_mrjrk"]
+[ext_resource type="PackedScene" uid="uid://v3bbiesfht3u" path="res://Clase 6/Plataforma/Plataforma.tscn" id="5_2gsqj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_nmsu5"]
+size = Vector2(35, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kq06s"]
+size = Vector2(617, 263)
+
+[sub_resource type="Curve2D" id="Curve2D_x7uci"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 712, 574, 0, 0, 0, 0, 712, 200, 0, 0, 0, 0, 712, 574)
+}
+point_count = 3
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_s672p"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_37ak3")
+
+[node name="Jugador" type="CharacterBody2D" parent="."]
+position = Vector2(306, 187)
+platform_on_leave = 2
+script = ExtResource("2_4tduv")
+
+[node name="Giganto" type="Sprite2D" parent="Jugador"]
+texture_filter = 1
+texture = ExtResource("3_21ubk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Jugador"]
+position = Vector2(0.5, 2)
+shape = SubResource("RectangleShape2D_nmsu5")
+
+[node name="Escenario" type="StaticBody2D" parent="."]
+position = Vector2(-139, 574)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Escenario"]
+position = Vector2(231, -56)
+shape = SubResource("RectangleShape2D_kq06s")
+
+[node name="Icon" type="Sprite2D" parent="Escenario"]
+position = Vector2(230.5, -56)
+scale = Vector2(4.82031, 2.04688)
+texture = ExtResource("4_mrjrk")
+
+[node name="Escenario2" type="StaticBody2D" parent="."]
+position = Vector2(1102, 574)
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Escenario2"]
+position = Vector2(231, -56)
+shape = SubResource("RectangleShape2D_kq06s")
+
+[node name="Icon" type="Sprite2D" parent="Escenario2"]
+position = Vector2(230.5, -56)
+scale = Vector2(4.82031, 2.04688)
+texture = ExtResource("4_mrjrk")
+
+[node name="Path2D" type="Path2D" parent="."]
+curve = SubResource("Curve2D_x7uci")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="Path2D"]
+position = Vector2(712, 574)
+rotation = -1.5708
+rotates = false
+
+[node name="Plataforma" parent="Path2D/PathFollow2D" node_paths=PackedStringArray("seguidor") instance=ExtResource("5_2gsqj")]
+seguidor = NodePath("..")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(712, 648)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("WorldBoundaryShape2D_s672p")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

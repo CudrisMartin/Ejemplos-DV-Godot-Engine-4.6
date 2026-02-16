@@ -1,0 +1,113 @@
+[gd_scene load_steps=3 format=3 uid="uid://bwj028so425kr"]
+
+[ext_resource type="Theme" uid="uid://bnoxaja50squm" path="res://Assets Generales/Themes/GUI general.tres" id="1_lnev2"]
+[ext_resource type="Script" uid="uid://bssw0bktytb0l" path="res://Clase 2 y 3 -- Prog en GDScript - Nodos/InfoCarro.gd" id="2_hq4kt"]
+
+[node name="InfoCarro" type="PanelContainer" node_paths=PackedStringArray("Placa", "Marca", "Velocidad", "color", "Regresar")]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -306.0
+offset_top = -116.0
+offset_bottom = 116.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 4
+theme = ExtResource("1_lnev2")
+script = ExtResource("2_hq4kt")
+Placa = NodePath("MarginContainer/VBoxContainer/CampoPlaca/HBoxContainer/txtPlaca")
+Marca = NodePath("MarginContainer/VBoxContainer/CampoMarca/HBoxContainer/txtMarca")
+Velocidad = NodePath("MarginContainer/VBoxContainer/CampoVelocidad/HBoxContainer/txtVelocidad")
+color = NodePath("MarginContainer/VBoxContainer/CampoColor/HBoxContainer/txtColor")
+Regresar = NodePath("MarginContainer/VBoxContainer/MarginContainer/Button")
+metadata/_edit_vertical_guides_ = [576.0]
+metadata/_edit_horizontal_guides_ = [326.0]
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+
+[node name="CampoMarca" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_right = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/CampoMarca"]
+layout_mode = 2
+
+[node name="titlMarca" type="Label" parent="MarginContainer/VBoxContainer/CampoMarca/HBoxContainer"]
+custom_minimum_size = Vector2(142, 0)
+layout_mode = 2
+size_flags_vertical = 1
+text = "Marca"
+
+[node name="txtMarca" type="Label" parent="MarginContainer/VBoxContainer/CampoMarca/HBoxContainer"]
+custom_minimum_size = Vector2(142, 0)
+layout_mode = 2
+
+[node name="CampoPlaca" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_right = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/CampoPlaca"]
+layout_mode = 2
+
+[node name="titlPlaca" type="Label" parent="MarginContainer/VBoxContainer/CampoPlaca/HBoxContainer"]
+custom_minimum_size = Vector2(142, 0)
+layout_mode = 2
+text = "Placa"
+
+[node name="txtPlaca" type="Label" parent="MarginContainer/VBoxContainer/CampoPlaca/HBoxContainer"]
+custom_minimum_size = Vector2(142, 0)
+layout_mode = 2
+
+[node name="CampoVelocidad" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_right = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/CampoVelocidad"]
+layout_mode = 2
+
+[node name="titlVelocidad" type="Label" parent="MarginContainer/VBoxContainer/CampoVelocidad/HBoxContainer"]
+custom_minimum_size = Vector2(142, 0)
+layout_mode = 2
+text = "Velocidad"
+
+[node name="txtVelocidad" type="Label" parent="MarginContainer/VBoxContainer/CampoVelocidad/HBoxContainer"]
+custom_minimum_size = Vector2(142, 0)
+layout_mode = 2
+
+[node name="CampoColor" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_right = 0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/VBoxContainer/CampoColor"]
+layout_mode = 2
+
+[node name="titlColor" type="Label" parent="MarginContainer/VBoxContainer/CampoColor/HBoxContainer"]
+custom_minimum_size = Vector2(142, 0)
+layout_mode = 2
+text = "Color"
+
+[node name="txtColor" type="Label" parent="MarginContainer/VBoxContainer/CampoColor/HBoxContainer"]
+custom_minimum_size = Vector2(142, 0)
+layout_mode = 2
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_right = 0
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 4
+text = "Regresar"

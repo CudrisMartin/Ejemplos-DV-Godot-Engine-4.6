@@ -1,0 +1,149 @@
+[gd_scene load_steps=20 format=3 uid="uid://7pp2ss1dd7c2"]
+
+[ext_resource type="Texture2D" uid="uid://dopjf8vkrui2f" path="res://Assets Generales/Sprites/Adventurer/adventurer-Sheet.png" id="1_idfgv"]
+[ext_resource type="Script" uid="uid://dd12o24o0vwop" path="res://Clase 1 - Introduccionn/JugadorPlataformero.gd" id="1_ujl2e"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d4ayn"]
+atlas = ExtResource("1_idfgv")
+region = Rect2(50, 111, 50, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l4hvj"]
+atlas = ExtResource("1_idfgv")
+region = Rect2(100, 111, 50, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_nprk7"]
+atlas = ExtResource("1_idfgv")
+region = Rect2(0, 0, 50, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_x5fv6"]
+atlas = ExtResource("1_idfgv")
+region = Rect2(50, 0, 50, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tokoo"]
+atlas = ExtResource("1_idfgv")
+region = Rect2(100, 0, 50, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_w5t0u"]
+atlas = ExtResource("1_idfgv")
+region = Rect2(150, 0, 50, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ybdm3"]
+atlas = ExtResource("1_idfgv")
+region = Rect2(0, 74, 50, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_l8ghf"]
+atlas = ExtResource("1_idfgv")
+region = Rect2(50, 74, 50, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ha8xx"]
+atlas = ExtResource("1_idfgv")
+region = Rect2(100, 74, 50, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_lgym6"]
+atlas = ExtResource("1_idfgv")
+region = Rect2(150, 74, 50, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rawj3"]
+atlas = ExtResource("1_idfgv")
+region = Rect2(100, 37, 50, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g23rr"]
+atlas = ExtResource("1_idfgv")
+region = Rect2(150, 37, 50, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hio4q"]
+atlas = ExtResource("1_idfgv")
+region = Rect2(200, 37, 50, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7v3rt"]
+atlas = ExtResource("1_idfgv")
+region = Rect2(250, 37, 50, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8rlw0"]
+atlas = ExtResource("1_idfgv")
+region = Rect2(300, 37, 50, 37)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_1u0gi"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d4ayn")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l4hvj")
+}],
+"loop": true,
+"name": &"fall",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nprk7")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_x5fv6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tokoo")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_w5t0u")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ybdm3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l8ghf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ha8xx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_lgym6")
+}],
+"loop": false,
+"name": &"jump",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rawj3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g23rr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hio4q")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7v3rt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8rlw0")
+}],
+"loop": true,
+"name": &"run",
+"speed": 8.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ujl2e"]
+size = Vector2(16, 28)
+
+[node name="JugadorPlataformero" type="CharacterBody2D"]
+scale = Vector2(2, 2)
+script = ExtResource("1_ujl2e")
+
+[node name="Sprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -4)
+sprite_frames = SubResource("SpriteFrames_1u0gi")
+animation = &"idle"
+autoplay = "idle"
+frame_progress = 0.515747
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_ujl2e")
