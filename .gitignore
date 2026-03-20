@@ -1,0 +1,8 @@
+# Carpetas de caché y configuración de Godot
+.godot/
+.import/
+export_presets.cfg
+
+# Archivos temporales de guardado o builds
+*.log
+build/
