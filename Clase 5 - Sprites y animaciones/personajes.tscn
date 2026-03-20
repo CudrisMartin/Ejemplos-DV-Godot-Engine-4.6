@@ -1,0 +1,366 @@
+[gd_scene format=3 uid="uid://dsfdhctki5y3i"]
+
+[ext_resource type="Texture2D" uid="uid://xfloutrol7e2" path="res://Clase 5 - Sprites y animaciones/Sprites/Elara caminando lado.png" id="1_yy0ju"]
+[ext_resource type="Texture2D" uid="uid://vug8i2e40j5w" path="res://Clase 5 - Sprites y animaciones/Sprites/Elara caminando atras.png" id="2_dtfdj"]
+[ext_resource type="Texture2D" uid="uid://fug7vkijcog4" path="res://Clase 5 - Sprites y animaciones/Sprites/Elara caminando frente.png" id="3_kan8v"]
+[ext_resource type="Texture2D" uid="uid://d1cf0bl7hexyf" path="res://Clase 5 - Sprites y animaciones/Sprites/Elara quieta.png" id="4_db8wi"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_3ro12"]
+radius = 17.0
+height = 52.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7xvkf"]
+atlas = ExtResource("2_dtfdj")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6otny"]
+atlas = ExtResource("2_dtfdj")
+region = Rect2(0, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u52qi"]
+atlas = ExtResource("2_dtfdj")
+region = Rect2(0, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cynxc"]
+atlas = ExtResource("2_dtfdj")
+region = Rect2(0, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2ts23"]
+atlas = ExtResource("1_yy0ju")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s5nx6"]
+atlas = ExtResource("1_yy0ju")
+region = Rect2(0, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aa4hj"]
+atlas = ExtResource("1_yy0ju")
+region = Rect2(0, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_uovef"]
+atlas = ExtResource("1_yy0ju")
+region = Rect2(0, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tt4dq"]
+atlas = ExtResource("3_kan8v")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jmyst"]
+atlas = ExtResource("3_kan8v")
+region = Rect2(0, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_p68rf"]
+atlas = ExtResource("3_kan8v")
+region = Rect2(0, 128, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y1r1e"]
+atlas = ExtResource("3_kan8v")
+region = Rect2(0, 192, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6j32m"]
+atlas = ExtResource("4_db8wi")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kly6x"]
+atlas = ExtResource("4_db8wi")
+region = Rect2(0, 64, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_onyo0"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7xvkf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6otny")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u52qi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cynxc")
+}],
+"loop": true,
+"name": &"Camina Atras",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2ts23")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_s5nx6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aa4hj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_uovef")
+}],
+"loop": true,
+"name": &"Camina Lado",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tt4dq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jmyst")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_p68rf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_y1r1e")
+}],
+"loop": true,
+"name": &"Camina_frente",
+"speed": 3.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6j32m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kly6x")
+}],
+"loop": true,
+"name": &"default",
+"speed": 2.0
+}]
+
+[sub_resource type="Animation" id="Animation_6cnd4"]
+resource_name = "Caminando"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("3_kan8v")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimationPlayer/Sprite2D:frame")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimationPlayer/Sprite2D:vframes")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [4]
+}
+
+[sub_resource type="Animation" id="Animation_u6cos"]
+resource_name = "Caminando Atras"
+length = 1.9666667
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_dtfdj")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimationPlayer/Sprite2D:vframes")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [4]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimationPlayer/Sprite2D:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.55),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3]
+}
+
+[sub_resource type="Animation" id="Animation_ttiu3"]
+resource_name = "Caminando_lado"
+length = 2.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/Sprite2D:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("1_yy0ju")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimationPlayer/Sprite2D:vframes")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [4]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimationPlayer/Sprite2D:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3]
+}
+
+[sub_resource type="Animation" id="Animation_mn40q"]
+resource_name = "Normal"
+length = 1.2333333
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.033333335, 0.6333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [0, 1]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimationPlayer/Sprite2D:vframes")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [2]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimationPlayer/Sprite2D:texture")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("4_db8wi")]
+}
+
+[sub_resource type="Animation" id="Animation_ask87"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimationPlayer/Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("AnimationPlayer/Sprite2D:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("4_db8wi")]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("AnimationPlayer/Sprite2D:vframes")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [4]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_a0nb6"]
+_data = {
+&"Caminando": SubResource("Animation_6cnd4"),
+&"Caminando Atras": SubResource("Animation_u6cos"),
+&"Caminando_lado": SubResource("Animation_ttiu3"),
+&"Normal": SubResource("Animation_mn40q"),
+&"RESET": SubResource("Animation_ask87")
+}
+
+[node name="Personajes" type="Node2D" unique_id=627588399]
+visible = false
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=375847351]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1208190505]
+shape = SubResource("CapsuleShape2D_3ro12")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1498816711]
+texture_filter = 1
+position = Vector2(1, 0)
+sprite_frames = SubResource("SpriteFrames_onyo0")
+animation = &"Camina Atras"
+frame_progress = 0.9993783
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=191923771]
+libraries/ = SubResource("AnimationLibrary_a0nb6")
+
+[node name="Sprite2D" type="Sprite2D" parent="AnimationPlayer" unique_id=1973550519]
+texture_filter = 1
+texture = ExtResource("4_db8wi")
+vframes = 4
