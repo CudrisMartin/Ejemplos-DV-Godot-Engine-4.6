@@ -1,7 +1,8 @@
-[gd_scene load_steps=13 format=3 uid="uid://cgswqosq1xyd1"]
+[gd_scene format=3 uid="uid://cgswqosq1xyd1"]
 
 [ext_resource type="Script" uid="uid://dnfflj51nbk58" path="res://Clase 7/Areas.gd" id="1_4rou2"]
 [ext_resource type="Texture2D" uid="uid://vyhqgix3ixrb" path="res://icon.svg" id="2_nnmpj"]
+[ext_resource type="Texture2D" uid="uid://s0l678vi5384" path="res://Clase 7/Sprite/Caja.png" id="2_t1101"]
 [ext_resource type="Script" uid="uid://diql3bqwevcow" path="res://Clase 7/Jugador.gd" id="3_7uor0"]
 [ext_resource type="Texture2D" uid="uid://cd0bwyo28u2p5" path="res://Assets Generales/Sprites/Pixel Adventure 2/Enemies/Turtle/Hit (44x26).png" id="3_w17hr"]
 [ext_resource type="Texture2D" uid="uid://cn4j7qkg18xm" path="res://Assets Generales/Sprites/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/idle/player-idle-1.png" id="4_3xsrh"]
@@ -20,7 +21,7 @@ radius = 8.0
 height = 22.0
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l4654"]
-size = Vector2(100, 70)
+size = Vector2(112, 76)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_g82jp"]
 size = Vector2(161, 378)
@@ -28,129 +29,133 @@ size = Vector2(161, 378)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l4ipo"]
 size = Vector2(150, 20)
 
-[node name="Areas" type="Node2D"]
+[node name="Areas" type="Node2D" unique_id=807583356]
 script = ExtResource("1_4rou2")
 
-[node name="Escenario" type="Node2D" parent="."]
+[node name="Escenario" type="Node2D" parent="." unique_id=1304773746]
 
-[node name="StaticBody2D2" type="StaticBody2D" parent="Escenario"]
+[node name="StaticBody2D2" type="StaticBody2D" parent="Escenario" unique_id=253909211]
 position = Vector2(1152, 0)
 collision_layer = 4
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Escenario/StaticBody2D2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Escenario/StaticBody2D2" unique_id=1316281029]
 position = Vector2(0, 324)
 shape = SubResource("RectangleShape2D_e1uc7")
 
-[node name="Icon" type="Sprite2D" parent="Escenario/StaticBody2D2"]
+[node name="Icon" type="Sprite2D" parent="Escenario/StaticBody2D2" unique_id=422151022]
 position = Vector2(0, 324)
 scale = Vector2(1, 5.0625)
 texture = ExtResource("2_nnmpj")
 
-[node name="StaticBody2D4" type="StaticBody2D" parent="Escenario"]
+[node name="StaticBody2D4" type="StaticBody2D" parent="Escenario" unique_id=242303140]
 collision_layer = 4
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Escenario/StaticBody2D4"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Escenario/StaticBody2D4" unique_id=679219051]
 position = Vector2(0, 324)
 shape = SubResource("RectangleShape2D_e1uc7")
 
-[node name="Icon" type="Sprite2D" parent="Escenario/StaticBody2D4"]
+[node name="Icon" type="Sprite2D" parent="Escenario/StaticBody2D4" unique_id=1268564711]
 position = Vector2(0, 324)
 scale = Vector2(1, 5.0625)
 texture = ExtResource("2_nnmpj")
 
-[node name="StaticBody2D3" type="StaticBody2D" parent="Escenario"]
+[node name="StaticBody2D3" type="StaticBody2D" parent="Escenario" unique_id=2059400436]
 collision_layer = 4
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Escenario/StaticBody2D3"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Escenario/StaticBody2D3" unique_id=1409355557]
 position = Vector2(576, 584.5)
 shape = SubResource("RectangleShape2D_n3tp8")
 
-[node name="Icon" type="Sprite2D" parent="Escenario/StaticBody2D3"]
+[node name="Icon" type="Sprite2D" parent="Escenario/StaticBody2D3" unique_id=1159896296]
 position = Vector2(576, 584)
 scale = Vector2(10, 1)
 texture = ExtResource("2_nnmpj")
 
-[node name="RigidBody2D" type="RigidBody2D" parent="."]
+[node name="RigidBody2D" type="RigidBody2D" parent="." unique_id=438879347]
 position = Vector2(992, 80)
 collision_layer = 2
 collision_mask = 6
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D" unique_id=1987618629]
 shape = SubResource("CircleShape2D_dnunn")
 
-[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D"]
+[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D" unique_id=1956006395]
 texture_filter = 1
 position = Vector2(0, -5)
 texture = ExtResource("3_w17hr")
 hframes = 5
 frame = 4
 
-[node name="Jugador" type="CharacterBody2D" parent="."]
+[node name="Jugador" type="CharacterBody2D" parent="." unique_id=1964018966]
 position = Vector2(232, 468)
 scale = Vector2(3, 3)
 collision_mask = 5
 script = ExtResource("3_7uor0")
 
-[node name="Sprite2D" type="Sprite2D" parent="Jugador"]
+[node name="Sprite2D" type="Sprite2D" parent="Jugador" unique_id=1030882452]
 texture_filter = 1
 texture = ExtResource("4_3xsrh")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Jugador"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Jugador" unique_id=98284573]
 position = Vector2(0, 5)
 shape = SubResource("CapsuleShape2D_equfc")
 
-[node name="Rojo" type="Area2D" parent="."]
+[node name="Rojo" type="Area2D" parent="." unique_id=531822984]
 z_index = -1
 position = Vector2(136, 484)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Rojo"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rojo" unique_id=1462316389]
+position = Vector2(3, -0.5)
 shape = SubResource("RectangleShape2D_l4654")
 
-[node name="Sprite2D" type="Sprite2D" parent="Rojo"]
+[node name="Sprite2D" type="Sprite2D" parent="Rojo" unique_id=1245054943]
 modulate = Color(1, 0, 0, 1)
-position = Vector2(-3.39746e-06, -1.81198e-05)
-scale = Vector2(0.78125, 0.546875)
-texture = ExtResource("2_nnmpj")
+texture_filter = 1
+position = Vector2(-1.04904175e-05, 4.000019)
+scale = Vector2(1.75, 1.25)
+texture = ExtResource("2_t1101")
 
-[node name="Verde" type="Area2D" parent="."]
+[node name="Verde" type="Area2D" parent="." unique_id=1156240193]
 z_index = -1
 position = Vector2(312, 484)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Verde"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Verde" unique_id=1371073722]
 shape = SubResource("RectangleShape2D_l4654")
 
-[node name="Sprite2D" type="Sprite2D" parent="Verde"]
+[node name="Sprite2D" type="Sprite2D" parent="Verde" unique_id=1250175537]
 modulate = Color(0, 1, 0, 1)
-position = Vector2(-3.39746e-06, -1.81198e-05)
-scale = Vector2(0.78125, 0.546875)
-texture = ExtResource("2_nnmpj")
+position = Vector2(-1.04904175e-05, 4.0000153)
+scale = Vector2(1.75, 1.2499996)
+texture = ExtResource("2_t1101")
 
-[node name="Azul" type="Area2D" parent="."]
+[node name="Azul" type="Area2D" parent="." unique_id=1004916070]
 z_index = -1
 position = Vector2(481, 484)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Azul"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Azul" unique_id=134188094]
+position = Vector2(7, 4)
 shape = SubResource("RectangleShape2D_l4654")
 
-[node name="Sprite2D" type="Sprite2D" parent="Azul"]
+[node name="Sprite2D" type="Sprite2D" parent="Azul" unique_id=1314215580]
 modulate = Color(0, 0, 1, 1)
-position = Vector2(-3.39746e-06, -1.81198e-05)
-scale = Vector2(0.78125, 0.546875)
-texture = ExtResource("2_nnmpj")
+position = Vector2(7.000004, 4.0000153)
+scale = Vector2(1.7500001, 1.2499996)
+texture = ExtResource("2_t1101")
 
-[node name="Limpiar" type="Area2D" parent="."]
+[node name="Limpiar" type="Area2D" parent="." unique_id=62053226]
 z_index = -1
 position = Vector2(656, 484)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Limpiar"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Limpiar" unique_id=1994596660]
+position = Vector2(8, 2)
 shape = SubResource("RectangleShape2D_l4654")
 
-[node name="Sprite2D" type="Sprite2D" parent="Limpiar"]
-position = Vector2(-3.39746e-06, -1.81198e-05)
-scale = Vector2(0.78125, 0.546875)
-texture = ExtResource("2_nnmpj")
+[node name="Sprite2D" type="Sprite2D" parent="Limpiar" unique_id=340184339]
+position = Vector2(7.999983, 4.0000153)
+scale = Vector2(1.75, 1.2499996)
+texture = ExtResource("2_t1101")
 
-[node name="Area_gravedad" type="Area2D" parent="."]
+[node name="Area_gravedad" type="Area2D" parent="." unique_id=401332281]
 position = Vector2(983, 222)
 collision_layer = 2
 collision_mask = 3
@@ -158,28 +163,28 @@ gravity_space_override = 2
 gravity_point_center = Vector2(0, -1)
 gravity_direction = Vector2(0, -1)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area_gravedad"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area_gravedad" unique_id=1793160202]
 position = Vector2(0, 109)
 shape = SubResource("RectangleShape2D_g82jp")
 
-[node name="RayCast2D" type="RayCast2D" parent="."]
+[node name="RayCast2D" type="RayCast2D" parent="." unique_id=1885592748]
 position = Vector2(1088, 240)
 target_position = Vector2(-150, 0)
 collision_mask = 2
 
-[node name="ShapeCast2D" type="ShapeCast2D" parent="."]
+[node name="ShapeCast2D" type="ShapeCast2D" parent="." unique_id=1628144227]
 position = Vector2(976, 536)
 shape = SubResource("RectangleShape2D_l4ipo")
 target_position = Vector2(0, -150)
 collision_mask = 3
 
-[node name="ColorRect" type="ColorRect" parent="."]
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1726502131]
 offset_left = 1104.0
 offset_top = 224.0
 offset_right = 1144.0
 offset_bottom = 264.0
 
-[node name="ColorRect2" type="ColorRect" parent="."]
+[node name="ColorRect2" type="ColorRect" parent="." unique_id=408690679]
 offset_left = 960.0
 offset_top = 520.0
 offset_right = 1000.0
