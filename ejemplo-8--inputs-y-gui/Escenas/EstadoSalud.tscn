@@ -1,0 +1,117 @@
+[gd_scene format=3 uid="uid://bscx07c0qfvwv"]
+
+[ext_resource type="Texture2D" uid="uid://hxe7fq38q5ao" path="res://Assets/06wi_yzok_190916-removebg-preview.png" id="1_iware"]
+[ext_resource type="Script" uid="uid://8avu33h1rl6s" path="res://Scripts/estado_salud.gd" id="1_oqcrl"]
+[ext_resource type="Texture2D" uid="uid://clp20qkdp67nb" path="res://Assets/Pixel Heart Sprite Sheet 32x32.png" id="2_twl1x"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d3t3v"]
+atlas = ExtResource("2_twl1x")
+region = Rect2(0, 0, 32, 32)
+
+[node name="Main" type="Control" unique_id=162432234]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+script = ExtResource("1_oqcrl")
+
+[node name="UIPrincipal" type="CanvasLayer" parent="." unique_id=1915959424]
+
+[node name="Corazones" type="HBoxContainer" parent="UIPrincipal" unique_id=415584406]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Corazon1" type="TextureRect" parent="UIPrincipal/Corazones" unique_id=477765000]
+layout_mode = 2
+texture = SubResource("AtlasTexture_d3t3v")
+
+[node name="Corazon2" type="TextureRect" parent="UIPrincipal/Corazones" unique_id=474373661]
+layout_mode = 2
+texture = SubResource("AtlasTexture_d3t3v")
+
+[node name="Corazon3" type="TextureRect" parent="UIPrincipal/Corazones" unique_id=342660992]
+layout_mode = 2
+texture = SubResource("AtlasTexture_d3t3v")
+
+[node name="PanelEstado" type="Panel" parent="UIPrincipal" unique_id=1121164090]
+anchors_preset = -1
+anchor_left = 0.767
+anchor_top = 0.26700002
+anchor_right = 0.767
+anchor_bottom = 0.26700002
+offset_left = -171.58405
+offset_top = -89.01601
+offset_right = 171.41595
+offset_bottom = 88.98399
+grow_horizontal = 0
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UIPrincipal/PanelEstado" unique_id=1406239933]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="UIPrincipal/PanelEstado/VBoxContainer" unique_id=261971417]
+layout_mode = 2
+text = "Estado actual"
+
+[node name="ListaCondiciones" type="VBoxContainer" parent="UIPrincipal/PanelEstado/VBoxContainer" unique_id=341581741]
+layout_mode = 2
+
+[node name="PanelCondiciones" type="Panel" parent="UIPrincipal" unique_id=1058021875]
+anchors_preset = -1
+anchor_left = 0.76600003
+anchor_top = 0.46600002
+anchor_right = 0.76600003
+anchor_bottom = 0.46600002
+offset_left = -171.432
+offset_top = -19.968018
+offset_right = 172.568
+offset_bottom = 96.03198
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UIPrincipal/PanelCondiciones" unique_id=1554456712]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+alignment = 1
+
+[node name="NombreCondicion" type="LineEdit" parent="UIPrincipal/PanelCondiciones/VBoxContainer" unique_id=1501218232]
+layout_mode = 2
+placeholder_text = "Nombre de la condición"
+
+[node name="ZonaCondicion" type="OptionButton" parent="UIPrincipal/PanelCondiciones/VBoxContainer" unique_id=1657433687]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="UIPrincipal/PanelCondiciones/VBoxContainer" unique_id=372236557]
+layout_mode = 2
+text = "Añada una condicion"
+
+[node name="PopupPanel" type="PopupPanel" parent="UIPrincipal" unique_id=450745372]
+oversampling_override = 1.0
+initial_position = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="UIPrincipal/PopupPanel" unique_id=2049935331]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 96.0
+offset_bottom = 96.0
+
+[node name="Label" type="Label" parent="UIPrincipal/PopupPanel/VBoxContainer" unique_id=1071482452]
+layout_mode = 2
+text = "Game Over
+"
+
+[node name="Button" type="Button" parent="UIPrincipal/PopupPanel/VBoxContainer" unique_id=445849574]
+layout_mode = 2
+text = "Cerrar"
+
+[node name="CuerpoHumano" type="Sprite2D" parent="." unique_id=28591573]
+position = Vector2(597, 325)
+scale = Vector2(0.6324921, 0.6562897)
+texture = ExtResource("1_iware")
+
+[node name="Marcas" type="Node2D" parent="." unique_id=1474295708]
