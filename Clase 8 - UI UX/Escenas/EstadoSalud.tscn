@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://bscx07c0qfvwv"]
 
-[ext_resource type="Texture2D" uid="uid://hxe7fq38q5ao" path="res://Assets/06wi_yzok_190916-removebg-preview.png" id="1_iware"]
-[ext_resource type="Script" uid="uid://8avu33h1rl6s" path="res://Scripts/estado_salud.gd" id="1_oqcrl"]
-[ext_resource type="Texture2D" uid="uid://clp20qkdp67nb" path="res://Assets/Pixel Heart Sprite Sheet 32x32.png" id="2_twl1x"]
+[ext_resource type="Texture2D" uid="uid://hxe7fq38q5ao" path="res://Clase 8 - UI UX/Assets/06wi_yzok_190916-removebg-preview.png" id="1_iware"]
+[ext_resource type="Script" uid="uid://8avu33h1rl6s" path="res://Clase 8 - UI UX/Scripts/estado_salud.gd" id="1_oqcrl"]
+[ext_resource type="Texture2D" uid="uid://clp20qkdp67nb" path="res://Clase 8 - UI UX/Assets/Pixel Heart Sprite Sheet 32x32.png" id="2_twl1x"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_d3t3v"]
 atlas = ExtResource("2_twl1x")
@@ -18,6 +18,8 @@ grow_vertical = 2
 size_flags_horizontal = 4
 size_flags_vertical = 4
 script = ExtResource("1_oqcrl")
+metadata/_edit_horizontal_guides_ = [327.0]
+metadata/_edit_vertical_guides_ = [599.0]
 
 [node name="UIPrincipal" type="CanvasLayer" parent="." unique_id=1915959424]
 
@@ -111,7 +113,7 @@ text = "Cerrar"
 
 [node name="CuerpoHumano" type="Sprite2D" parent="." unique_id=28591573]
 position = Vector2(597, 325)
-scale = Vector2(0.6324921, 0.6562897)
+scale = Vector2(0.5, 0.5)
 texture = ExtResource("1_iware")
 
 [node name="Marcas" type="Node2D" parent="." unique_id=1474295708]

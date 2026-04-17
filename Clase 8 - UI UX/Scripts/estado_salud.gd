@@ -1,31 +1,34 @@
 extends Control
 
+# Variables declarando paneles, assets y demás
 @onready var panel_estado = $UIPrincipal/PanelEstado
 @onready var panel_condiciones = $UIPrincipal/PanelCondiciones
 @onready var game_over_popup = $UIPrincipal/PopupPanel
-@onready var hearts_container = $UIPrincipal/Corazones
-@onready var body_node = $CuerpoHumano
-@onready var marks_node = $Marcas
+@onready var contenedor_corazones = $UIPrincipal/Corazones
+@onready var cuerpo_humano = $CuerpoHumano
+@onready var nodo_marcas = $Marcas
 
 @onready var nombre_input = $UIPrincipal/PanelCondiciones/VBoxContainer/NombreCondicion
 @onready var zona_input = $UIPrincipal/PanelCondiciones/VBoxContainer/ZonaCondicion
 @onready var lista_condiciones = $UIPrincipal/PanelEstado/VBoxContainer/ListaCondiciones
 
+# Variables con las vidas totales y condiciones
 var vida_total = 3
 var vida_actual = 3
 var condiciones_aplicadas = 0
 
 # Zonas con su posición relativa al cuerpo
 var zonas = {
-	"Cabeza":    Vector2(0, -150),
-	"Pecho":     Vector2(0, -60),
-	"Abdomen":   Vector2(0, 20),
-	"Brazo izq": Vector2(-80, -40),
-	"Brazo der": Vector2(80, -40),
-	"Pierna izq":Vector2(-30, 120),
-	"Pierna der":Vector2(30, 120),
+	"Cabeza":    Vector2(0, -176),
+	"Pecho":     Vector2(0, -108),
+	"Abdomen":   Vector2(0, -40),
+	"Brazo izq": Vector2(-67.1, -67.1),
+	"Brazo der": Vector2(-56.4, -56.4),
+	"Pierna izq":Vector2(-91.2, -91.2),
+	"Pierna der":Vector2(-97.4, -97.4),
 }
 
+# Los paneles apareceran desactivados al inicio
 func _ready():
 	panel_estado.visible = false
 	panel_condiciones.visible = false
@@ -60,7 +63,7 @@ func agregar_condicion():
 
 	# Quitar corazón
 	vida_actual -= 1
-	var heart = hearts_container.get_child(vida_actual)
+	var heart = contenedor_corazones.get_child(vida_actual)
 	heart.modulate = Color(0.3, 0.3, 0.3, 0.4)
 
 	# Añadir X en el cuerpo
@@ -68,8 +71,8 @@ func agregar_condicion():
 	marca.text = "✕"
 	marca.add_theme_font_size_override("font_size", 48)
 	marca.modulate = Color.RED
-	marca.position = body_node.position + zona_pos - Vector2(15, 24)
-	marks_node.add_child(marca)
+	marca.position = cuerpo_humano.position + zona_pos - Vector2(15, 24)
+	nodo_marcas.add_child(marca)
 
 	# Añadir al listado de estado actual
 	var entrada = Label.new()
@@ -82,6 +85,7 @@ func agregar_condicion():
 	if vida_actual <= 0:
 		game_over()
 
+# Funcion que abre el pop-up de Game Over
 func game_over():
 	panel_estado.visible = false
 	panel_condiciones.visible = false

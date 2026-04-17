@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=5 format=3 uid="uid://cbtuj76ux3b66"]
+[gd_resource type="TileSet" format=3 uid="uid://cbtuj76ux3b66"]
 
 [ext_resource type="Texture2D" uid="uid://c5xqaxs7sib77" path="res://Assets Generales/Sprites/Pixel Adventure 1/Free/Terrain/Terrain (16x16).png" id="1_jry8i"]
 
